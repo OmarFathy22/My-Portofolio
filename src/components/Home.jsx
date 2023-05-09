@@ -10,7 +10,7 @@ function Home() {
         <AboutMe/>
         <Projects/>
         <Testmonials/>
-        {/* <Contact/> */}
+        <Contact/>
     </div>
   )
 }

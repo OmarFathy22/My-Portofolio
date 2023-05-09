@@ -36,13 +36,15 @@ function Contact() {
   };
 
   return (
-    <div>
-      <h1 className="text-[30px] font-bold mb-[100px] text-[var(--primaryColor)] text-center">
+    <div className="lg:mx-auto ">
+      <h1 data-aos="flip-right" className="text-[30px] font-bold  mb-[100px] text-[var(--primaryColor)] text-center">
         Keep in touch
       </h1>
-      <div className="flex gap-[100px] mx-[10%] w-[55%] ">
+      <div className="
+      flex sm-md:flex-col sm-md:justify-center sm-md:items-center gap-[100px] sm-md:gap-[20px]  mx-[20px] 
+      ">
         <form ref={form} onSubmit={handleSubmit(HandleSubmit)}>
-          <div className="flex">
+          <div className="flex sm-md:flex-col sm-md:gap-[20px]  w-full">
             <div data-aos="flip-left" className="flex flex-col flex-1">
             <input
               {...register("name", {
@@ -57,7 +59,7 @@ function Contact() {
                 },
                 
               })}
-              className="px-3 py-4 rounded-md mr-4 focus-within:outline-none"
+              className="px-3 py-4 rounded-md sm-md:mr-0 mr-4 focus-within:outline-none"
               placeholder="Name"
               type="name"
               name="name"
@@ -104,7 +106,7 @@ function Contact() {
               },
             })}
             placeholder="Enter your message here..."
-            className="mt-[20px] p-3 rounded-md focus-within:outline-none"
+            className=" sm-md:block sm-md:mx-auto w-full sm-md:w-[100%] mt-[20px] p-3 rounded-md focus-within:outline-none"
             style={{ resize: "none" }}
             cols="98"
             rows="10"
@@ -120,7 +122,7 @@ function Contact() {
            data-aos="flip-down"
             type="submit"
             onClick={handleSubmit(HandleSubmit)}
-            className="w-full bg-[var(--primaryColor)] text-white px-5 py-3 rounded-md mt-[20px] focus-within:outline-none"
+            className="sm-md:w-[40%] sm-md:mx-auto sm-md:block w-full lg:w-full text-center bg-[var(--primaryColor)] text-white px-5 py-3 rounded-md mt-[20px] focus-within:outline-none"
           >
             Send
           </button>

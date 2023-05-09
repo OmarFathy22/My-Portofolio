@@ -24,7 +24,7 @@ function Hero() {
                 />
             </h1>
             <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta repudiandae hic, repellendus ratione aspernatur rerum mollitia necessitatibus qui enim officiis, neque nisi fugit praesentium labore, reprehenderit aliquam iusto ducimus.</p>
-            <button className='!z-[-1] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]'>Download CV</button>
+            <button className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]'>Download CV</button>
          </div>
       </div>
     </div>

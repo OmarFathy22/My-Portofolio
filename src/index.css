@@ -14,9 +14,7 @@
  h1 , h2 , h3 , h4 , h5  , h6 , p{
   cursor: default ;
  }
- button{
-  z-index: 1111100 !important;
- }
+
 :root {
   --primaryBackground: #212222;
   --secondaryBackground: #2f3030;
@@ -33,6 +31,7 @@ body{
 #root{
   overflow-x: hidden;
 }
+
 .image-link::after{
   position: absolute;
     content: "";
@@ -62,3 +61,9 @@ body{
 .slick-list{
   height: 410px ;
 }
+@media screen and (max-width: 768px) {
+  .slick-list{
+    height: 500px ;
+  }
+}
+  

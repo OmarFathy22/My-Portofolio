@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-const Links = ["/", "About", "Projects", "Testimonials", "Services", "Contact"];
+const Links = ["/", "About", "Projects", "Testimonials", "Contact"];
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
@@ -24,8 +24,10 @@ function Header() {
     }
   };
   return (
-    <header className="z-[11] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
+    <header className="z-[200] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
+      <Link to="/">
       <img src={logo} alt="" className="w-[100px] h-[100px]" />
+      </Link> 
       <ul className="hidden lg:flex xl:flex  w-[70%] justify-end items-center gap-[50px]">
         {Links.map((item, index) => (
           <li
