@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.border{
+  border: 1px solid red;
+}
+ h1 , h2 , h3 , h4 , h5  , h6 , p{
+  cursor: default ;
+ }
+ button{
+  z-index: 1111100 !important;
+ }
+:root {
+  --primaryBackground: #212222;
+  --secondaryBackground: #2f3030;
+  --primaryColor: #e0a80d;
+  --greyDark: #7d8792;
+  --headingColor: #2d2e2e;
+  --white: #fff;
+  --black: #000;
+  --silver: #bac8d3;
+}
+body{
+  background-color: var(--primaryBackground);
+}
+#root{
+  overflow-x: hidden;
+}
+.image-link::after{
+  position: absolute;
+    content: "";
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%) scale(.9);
+    transform: translate(-50%,-50%) scale(.9);
+    left: auto;
+    left: 50%;
+    width: 120px;
+    height: 60px;
+    background-image: url(./assets/menu-hover-shape.webp);
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all .5s eas
+}
+/* .image-link:hover::after{
+  opacity: 1;
+  transition: all .5s ease;
+} */
+
+.active{
+  color: white !important;
+}
+.active.image-link::after{
+  opacity: 1;
+}
+.slick-list{
+  height: 410px ;
+}
