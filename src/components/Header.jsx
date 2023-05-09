@@ -24,9 +24,9 @@ function Header() {
     }
   };
   return (
-    <header className="z-[200] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
+    <header className="sm:px-3 z-[200] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
       <Link to="/">
-      <img src={logo} alt="" className="w-[100px] h-[100px]" />
+      <img src={logo} alt="image" className="w-[100px] h-[100px]" />
       </Link> 
       <ul className="hidden lg:flex xl:flex  w-[70%] justify-end items-center gap-[50px]">
         {Links.map((item, index) => (
@@ -47,18 +47,20 @@ function Header() {
           </li>
         ))}
       </ul>
-      <h1
-        ref={menuRef}
-        onClick={() => {
-          setisOpen(!isOpen);
-          setTimeout(() => {
-            setshodow(!shadow)
-          }, 300);
-        }}
-        className=" flex justify-end lg:hidden xl:hidden w-[70%] text-center cursor-pointer text-[30px]  text-white"
-      >
-        <BiMenu className="text-center !sm:text-red-500" />  
-      </h1>
+    <div className="flex justify-end lg:hidden xl:hidden w-[70%]">
+        <button
+          ref={menuRef}
+          onClick={() => {
+            setisOpen(!isOpen);
+            setTimeout(() => {
+              setshodow(!shadow)
+            }, 300);
+          }}
+          className="text-center cursor-pointer text-[30px]  text-white"
+        >
+          <BiMenu className="text-center !sm:text-red-500" />  
+        </button>
+    </div>
     
         <div>
         <ul style={{transition:"all 0.5s ease-in-out"}} className={`lg:hidden xl:hidden  fixed top-[10vh] right-0 h-[90vh] w-[220px] bg-[#3f3e3e] flex flex-col items-center justify-center z-1000 gap-[50px]  ${isOpen? "translate-x-[0]" : "translate-x-[1000px]"}`}>
