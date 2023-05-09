@@ -1,7 +1,9 @@
 import Image from '../assets/man.png'
+import { useLocation } from 'react-router-dom';
 function AboutMe() {
+  const location = useLocation();
   return (
-    <div className='flex sm:flex-col  justify-center items-center h-[100vh]  gap-[100px]'>
+    <div className={`flex sm:flex-col  justify-center items-center h-[100vh]  gap-[100px] ${location.pathname === '/About' ? "mt-[30vh]" : ""}`}>
       <section data-aos="fade-down-right">
         <img src={Image} alt="Image" />
       </section>
