@@ -13,7 +13,6 @@ select,
 a {
   -webkit-tap-highlight-color: transparent;
 }
-
 .border{
   border: 1px solid red;
 }
