@@ -37,7 +37,7 @@ function Contact() {
 
   return (
     <div className="lg:mx-auto ">
-      <h1 data-aos="flip-right" className="text-[30px] font-bold  mb-[100px] text-[var(--primaryColor)] text-center">
+      <h1 data-aos="flip-right" className="text-[50px] font-bold  mb-[100px] text-[var(--primaryColor)] text-center">
         Keep in touch
       </h1>
       <div className="

@@ -40,7 +40,7 @@ function Testmonials() {
   };
   return (
     <div  className="my-[100px]">
-      <h1 data-aos="zoom-out" className='text-[30px] font-bold text-[var(--primaryColor)] text-center mb-[100px]'> Testimonials </h1>
+      <h1 data-aos="zoom-out" className='text-[50px] font-bold text-[var(--primaryColor)] text-center mb-[100px]'> Testimonials </h1>
       <div className="w-[80%] mx-auto">
         <Slider {...settings}>
         

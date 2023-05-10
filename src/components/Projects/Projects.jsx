@@ -7,7 +7,7 @@ function Projects() {
   const [currBtn , setcurrBtn] = useState('ALL')
   return (
     <div className="flex min-h-[100vh] flex-col gap-[30px] items-center !overflow-x-hidden">
-      <h1 data-aos={Animation[Math.floor(Math.random() * Animation.length)]} className="text-[30px] font-bold mb-7 text-[var(--primaryColor)]">
+      <h1 data-aos={Animation[Math.floor(Math.random() * Animation.length)]} className="text-[50px] font-bold mb-7 text-[var(--primaryColor)]">
         Projects
       </h1>
       <div data-aos={Animation[Math.floor(Math.random() * Animation.length)]} style={{transition : "all 0.3s ease-in" , }} className={`px-5 flex sm:gap-[20px] gap-10 py-4 z-10 bg-[var(--primaryBackground)]`}>
@@ -29,7 +29,7 @@ function Projects() {
           <div
           data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className="w-[400px] h-[500px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
+            className="w-[400px] h-[500px]  sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
           >
             <img
               loading="lazy"

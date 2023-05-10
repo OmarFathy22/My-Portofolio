@@ -23,7 +23,7 @@ function Hero() {
                     }}  
                 />
             </h1>
-            <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta repudiandae hic, repellendus ratione aspernatur rerum mollitia necessitatibus qui enim officiis, neque nisi fugit praesentium labore, reprehenderit aliquam iusto ducimus.</p>
+            <p className='text-white text-center'> I consistently stay up-to-date with the latest web technologies and trends, and I collaborate closely with clients to ensure their vision is brought to life. With a user-centered design approach, I take pride in delivering high-quality output that exceeds client expectations and provides a positive impact on the end-users.</p>
             <button className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]'>Download CV</button>
          </div>
       </div>
