@@ -1,15 +1,15 @@
-import logo from '../assets/me1.jpg'
+import logo from '../assets/me3.jpg'
 import logo2 from '../assets/me2.jpg'
-import logo3 from '../assets/me3.jpg'
+import logo3 from '../assets/me1.jpg'
 import Typewriter from 'typewriter-effect';
 
 function Hero() {
   return (
     <div className="h-[90vh] mt-[10vh]  w-full relative   ">
       <div className='h-full  flex opacity-[0.02] z-[-1]'>
-        <img src={logo2} alt="" className='w-[33.33%] h-full' />
-        <img src={logo3} alt="" className='w-[33.33%] h-full' />
-        <img src={logo} alt="" className='w-[33.33%] h-full' />
+        <img src={logo2} alt="" className='sm:hidden md:w-[50%] lg:w-[33.33%] h-full' />
+        <img src={logo3} alt="" className='sm-md:hidden lg:w-[33.33%] h-full' />
+        <img src={logo} alt="" className=' sm:w-[100%]  md:w-[50%] lg:w-[33.33%] h-full' />
       </div>
       <div className='absolute top-0 right-0 bottom-0 left-0 flex justify-center' >
          <div className='h-full sm:w-[90%] w-[80%] flex flex-col gap-[30px] justify-center items-center'>

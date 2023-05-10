@@ -29,7 +29,7 @@ function Projects() {
           <div
           data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className="w-[400px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
+            className="w-[400px] h-[500px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
           >
             <img
               loading="lazy"
@@ -46,7 +46,7 @@ function Projects() {
               <h1 data-aos="fade-right" className="text-white my-3 border-b-[1px] font-semibold">
                 Stack
               </h1>
-              <div data-aos="fade-up" className=" flex justify-center gap-[10px] flex-wrap text-white">
+              <div data-aos="fade-up" className=" h- flex justify-center gap-[10px] flex-wrap text-white">
                 {item.stack.map((item, index) => (
                   <h3
                     key={index}
@@ -57,12 +57,12 @@ function Projects() {
                 ))}
               </div>
               <div className="w-full flex justify-around">
-                <button  className="w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px] ">
+                <a href={item.SourceCode} target="_blank" rel="noreferrer" className="text-center w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px] ">
                   Source Code
-                </button>
-                <button className="w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]">
+                </a>
+                <a  href={item.LiveDemo} target="_blank" rel="noreferrer" className="text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]">
                   View Demo
-                </button>
+                </a>
               </div>
             </div>
           </div>
