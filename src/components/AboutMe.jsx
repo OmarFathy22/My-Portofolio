@@ -1,4 +1,3 @@
-import Image from '../assets/me3.jpg';
 import { useLocation } from 'react-router-dom';
 function AboutMe() {
   const location = useLocation();
