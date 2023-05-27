@@ -4,10 +4,12 @@ import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop';
 function Home() {
   return (
-    <div className='flex flex-col gap-[100px]'>
+    <div className='flex flex-col gap-[100px] relative'>
       <ScrollToTop />
       <Header />
-       <Outlet/>
+       <div>
+        <Outlet/>
+       </div>
       <Footer />
     </div>
   )

@@ -71,4 +71,16 @@ body{
     height: 500px ;
   }
 }
-  
+.skills{
+  animation: animate_skills 1s linear forwards;
+
+}
+@keyframes animate_skills {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+

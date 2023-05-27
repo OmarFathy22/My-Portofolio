@@ -17,10 +17,10 @@ function Contact() {
     // e.preventDefault();
     emailjs
       .sendForm(
-        "service_hnf0i09",
-        "template_fnmzw0s",
+        "service_nybiiiu",
+        "template_6n45jw7",
         form.current,
-        "HUq4s0kbtihg_jb62",
+        "XNhKuhUxoH-AMKijA",
       )
       .then(
         (result) => {
@@ -36,7 +36,7 @@ function Contact() {
   };
 
   return (
-    <div className="lg:mx-auto ">
+    <div className="lg:mx-auto flex items-center flex-col  justify-center px-[10%] mt-[100px]" id="#Contact">
       <h1 data-aos="flip-right" className="text-[50px] font-bold  mb-[100px] text-[var(--primaryColor)] text-center">
         Keep in touch
       </h1>
@@ -84,7 +84,7 @@ function Contact() {
                 },
               })}
               className=" px-3 py-4 rounded-md focus-within:outline-none"
-              placeholder="email"
+              placeholder="Email"
               type="email"
               name="email"
               />

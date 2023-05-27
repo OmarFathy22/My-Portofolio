@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import logo1 from "../assets/anoni.jpg";
-import logo2 from "../assets/me2.jpg";
 import logo3 from "../assets/sobhi.jpg";
 const Sobhi = {
   id: 2,
@@ -25,7 +24,7 @@ const testimonials = [
     name: "Ryan Adam",
     title: "Back End Developer",
     disc: "very good developer , it was so nice to work with this man .",
-    image: logo2,
+    image: logo1,
   },
 ]
 function Testmonials() {

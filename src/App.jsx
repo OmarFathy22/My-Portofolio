@@ -4,7 +4,7 @@ import About from "./components/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Testimonials from "./components/Testmonials";
 import Contact from "./components/Contact";
-// import Services from "./components/Services";
+import Skill from "./components/Skills";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import {
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
        <Route path="Projects" element={<Projects />} />
        <Route path="Testimonials" element={<Testimonials />} />
        <Route path="Contact" element={<Contact />} />
-       {/* <Route path="Services" element={<Services />} /> */}
+       <Route path="Skills" element={<Skill />} />
     </Route>
   )
 );

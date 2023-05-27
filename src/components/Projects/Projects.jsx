@@ -6,13 +6,14 @@ function Projects() {
   const [projects, setProjects] = useState(ALL);
   const [currBtn , setcurrBtn] = useState('ALL')
   return (
-    <div className="flex min-h-[100vh] flex-col gap-[30px] items-center !overflow-x-hidden">
+    <div className=" min-h-[100vh]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
       <h1 data-aos={Animation[Math.floor(Math.random() * Animation.length)]} className="text-[50px] font-bold mb-7 text-[var(--primaryColor)]">
         Projects
       </h1>
       <div data-aos={Animation[Math.floor(Math.random() * Animation.length)]} style={{transition : "all 0.3s ease-in" , }} className={`px-5 flex sm:gap-[20px] gap-10 py-4 z-10 bg-[var(--primaryBackground)]`}>
         {buttons.map((item, index) => (
           <button 
+           
            onClick={() => {
             setcurrBtn(item)
             setProjects(item === 'ALL' ? ALL : item === 'VANILLA JS' ? VANILLA_JS : item === 'REACT' ? REACT : NEXT)
@@ -32,7 +33,6 @@ function Projects() {
             className="w-[400px] h-[500px]  sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
           >
             <img
-              loading="lazy"
               className=" rounded-t-md !w-full !h-[200px]"
               src={item.image}
               alt="image"
@@ -42,6 +42,7 @@ function Projects() {
                 {item.name}
               </h1>
               <div className="bg-[var(--primaryColor)] w-[100px] h-[3px]" />
+              <h3 className="text-white text-[15px] lowercase text-capitalize text-center">{item.description}</h3>
               {/* <p className="text-white text-justify">{item.description}</p> */}
               <h1 data-aos="fade-right" className="text-white my-3 border-b-[1px] font-semibold">
                 Stack
