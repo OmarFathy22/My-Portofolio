@@ -4,7 +4,7 @@ import Projects from './Projects/Projects';
 import Testmonials from './Testmonials';
 import Contact from './Contact';
 import Skills from './Skills';
-
+import HomeTitle from './HomeTitle';
 function Home() {
   return (
     <div className='flex flex-col gap-[100px] '>
@@ -14,6 +14,7 @@ function Home() {
         <Projects/>
         <Testmonials/>
         <Contact/>
+        <HomeTitle/>
     </div>
   )
 }

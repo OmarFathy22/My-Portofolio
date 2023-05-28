@@ -1,12 +1,18 @@
 import { buttons } from "./ProjectsData";
 import { ALL, VANILLA_JS, REACT, NEXT } from "./ProjectsData";
 import { useState } from "react";
+import { Helmet } from 'react-helmet-async';
 const Animation = ["zoom-out-down" , "zoom-out-up" , "zoom-out","zoom-in-right","zoom-in-left","zoom-in-down","zoom-in-up","zoom-in","flip-down","flip-up","flip-right","flip-left","fade-down-left","fade-down-right","fade-up-left","fade-up-right","fade-left","fade-right","fade-down","fade-up" , "zoom-out-left" ,"zoom-out-right" ]
 function Projects() {
   const [projects, setProjects] = useState(ALL);
   const [currBtn , setcurrBtn] = useState('ALL')
   return (
     <div className=" min-h-[100vh]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
+      <Helmet>
+        <meta name="Description" content="On this page You will find my recent Projects that I was working on" />
+        <title>Projects</title>
+        <link rel="canonical" href="https://omarfathy.pages.dev" />
+    </Helmet>
       <h1 data-aos={Animation[Math.floor(Math.random() * Animation.length)]} className="text-[50px] font-bold mb-7 text-[var(--primaryColor)]">
         Projects
       </h1>

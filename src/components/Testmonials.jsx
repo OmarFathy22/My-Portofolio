@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import logo1 from "../assets/anoni.jpg";
 import logo3 from "../assets/sobhi.jpg";
+import { Helmet } from 'react-helmet-async';
+
 const Sobhi = {
   id: 2,
   name: "Ahmed Sobhi",
@@ -40,6 +42,11 @@ function Testmonials() {
   
   return (
     <div  className="my-[100px]">
+      <Helmet>
+        <meta name="Description" content="On this page You will find what people say about me and my work" />
+        <title>Testimonials</title>
+        <link rel="canonical" href="https://omarfathy.pages.dev" />
+    </Helmet>
       <h1 data-aos="zoom-out" className='text-[50px] font-bold text-[var(--primaryColor)] text-center mb-[100px]'> Testimonials </h1>
       <div className="w-[80%] mx-auto">
         <Slider {...settings}>
