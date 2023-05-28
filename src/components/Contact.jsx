@@ -4,6 +4,8 @@ import { HiLocationMarker } from "react-icons/hi";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { Helmet } from 'react-helmet-async';
+
 function Contact() {
   const {
     register,
@@ -37,6 +39,11 @@ function Contact() {
 
   return (
     <div className="lg:mx-auto flex items-center flex-col  justify-center px-[10%] mt-[100px]" id="#Contact">
+      <Helmet>
+        <meta name="Description" content="On this page you will find my Contact Information and a Contact form if you want to contact with me" />
+        <title>Contact</title>
+        <link rel="canonical" href="https://omarfathy.pages.dev" />
+    </Helmet>
       <h1 data-aos="flip-right" className="text-[50px] font-bold  mb-[100px] text-[var(--primaryColor)] text-center">
         Keep in touch
       </h1>

@@ -3,10 +3,16 @@ import logo2 from '../assets/me2.jpg'
 import logo3 from '../assets/me1.jpg'
 import my_cv from '../assets/Resume.pdf'
 import Typewriter from 'typewriter-effect';
+import { Helmet } from 'react-helmet-async';
 
 function Hero() {
   return (
     <div className="h-[90vh] mt-[10vh]  w-full relative   ">
+      <Helmet>
+        <meta name="Description" content="this is my home page" />
+        <title>Home</title>
+        <link rel="canonical" href="https://omarfathy.pages.dev" />
+    </Helmet>
       <div className='h-full  flex opacity-[0.02] z-[-1]'>
         <img src={logo2} alt="" className='sm:hidden md:w-[50%] lg:w-[33.33%] h-full' />
         <img src={logo3} alt="" className='sm-md:hidden lg:w-[33.33%] h-full' />

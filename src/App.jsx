@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Skill from "./components/Skills";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -33,7 +34,7 @@ function App() {
     AOS.init();
   } , [])
   return (
-     <RouterProvider router={router} />
+       <RouterProvider router={router} />
   );
 }
 
