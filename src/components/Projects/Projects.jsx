@@ -7,7 +7,7 @@ function Projects() {
   const [projects, setProjects] = useState(ALL);
   const [currBtn , setcurrBtn] = useState('ALL')
   return (
-    <div className=" min-h-[100vh]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
+    <div className="min-h-[100vh]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
       <Helmet>
         <meta name="Description" content="On this page You will find my recent Projects that I was working on" />
         <title>Projects</title>
@@ -16,7 +16,7 @@ function Projects() {
       <h1 data-aos={Animation[Math.floor(Math.random() * Animation.length)]} className="text-[50px] font-bold mb-7 text-[var(--primaryColor)]">
         Projects
       </h1>
-      <div data-aos={Animation[Math.floor(Math.random() * Animation.length)]} style={{transition : "all 0.3s ease-in" , }} className={`px-5 flex sm:gap-[20px] gap-10 py-4 z-10 bg-[var(--primaryBackground)]`}>
+      <div data-aos={Animation[Math.floor(Math.random() * Animation.length)]} style={{transition : "all 0.3s ease-in" , }} className={` px-5 flex sm:gap-[10px] gap-6 py-4 z-10 bg-[var(--primaryBackground)]`}>
         {buttons.map((item, index) => (
           <button 
            
@@ -25,7 +25,7 @@ function Projects() {
             setProjects(item === 'ALL' ? ALL : item === 'VANILLA JS' ? VANILLA_JS : item === 'REACT' ? REACT : NEXT)
            }}
             key={index}
-            className={`text-white border-[1px] border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${item === currBtn ? 'bg-[var(--primaryColor)]' : ''}`}
+            className={`text-white border-[1px] sm:text-[10px] w-[fit-content] border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${item === currBtn ? 'bg-[var(--primaryColor)]' : ''}`}
           >
             {item}
           </button>
