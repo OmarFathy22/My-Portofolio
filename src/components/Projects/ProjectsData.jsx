@@ -13,7 +13,7 @@ export const ALL = [
     description:  "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
     stack: ["Fontawesome", "Firebase", "React","CSS"],
     SourceCode: "https://github.com/OmarFathy22/TAKATI",
-    LiveDemo: "https://newproject-5a159.web.app/",
+    LiveDemo: "https://taskati.pages.dev/",
   },
   {
     image: connectivea,
@@ -81,7 +81,7 @@ export const REACT = [
     description:  "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
     stack: ["Fontawesome", "Firebase", "React","CSS"],
     SourceCode: "https://picsum.photos/200/300",
-    LiveDemo: "https://newproject-5a159.web.app/",
+    LiveDemo: "https://taskati.pages.dev/",
   },
   {
     image: connectivea,
