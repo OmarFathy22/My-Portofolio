@@ -24,19 +24,19 @@ function Header() {
     }
   };
   return (
-    <header className="sm:px-3 z-[200] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
+    <header className="sm:px-3 px-10 z-[200] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
       <Link
         to="/"
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" className="mr-[100px]">
           <img src={logo} alt="image" className="w-[100px] h-[100px] logo" />
       </div>
         
       </Link>
-      <ul data-aos="fade-left" className="hidden lg:flex xl:flex  w-[70%] justify-end items-center gap-[50px]">
+      <ul data-aos="fade-left" className="hidden lg:flex xl:flex flex-1 justify-end items-center gap-[50px]">
         {Links.map((item, index) => (
           <li
             key={index}

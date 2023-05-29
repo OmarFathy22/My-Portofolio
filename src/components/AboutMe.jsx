@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 function AboutMe() {
   const location = useLocation();
   return (
-    <div className={`flex sm:flex-col  justify-center items-center h-[50vh]  gap-[100px] ${location.pathname === '/About' ? "mt-[30vh]" : ""}`}>
+    <div className={`flex sm:flex-col  justify-center items-center  h-[calc(100vh-430px)]   ${location.pathname === '/About' ? "mt-[30vh]" : ""}`}>
       <Helmet>
         <meta name="Description" content="On this page you will find some information about me" />
         <title>About</title>

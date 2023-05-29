@@ -5,6 +5,7 @@ import Projects from "./components/Projects/Projects";
 import Testimonials from "./components/Testmonials";
 import Contact from "./components/Contact";
 import Skill from "./components/Skills";
+import NotFound from './components/Error404'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
        <Route path="Testimonials" element={<Testimonials />} />
        <Route path="Contact" element={<Contact />} />
        <Route path="Skills" element={<Skill />} />
+       <Route path="*" element={<NotFound/>} />
     </Route>
   )
 );
