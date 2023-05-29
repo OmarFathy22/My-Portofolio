@@ -44,7 +44,7 @@ function Projects() {
               alt="image"
             />
             <div className="mx-[10px] flex flex-col gap-[10px] items-center">
-              <h1 data-aos="fade-left" className="text-[20px] font-bold mb-3 text-[var(--primaryColor)]">
+              <h1 data-aos="fade-left" className="uppercase text-[20px] font-bold mb-3 text-[var(--primaryColor)]">
                 {item.name}
               </h1>
               <div className="bg-[var(--primaryColor)] w-[100px] h-[3px]" />

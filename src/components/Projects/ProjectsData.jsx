@@ -9,7 +9,7 @@ export const buttons = ["ALL", "VANILLA JS" , "REACT", "NEXT.JS   "];
 export const ALL = [
   {
     image: taskati,
-    name: "Tasks App",
+    name: "TASKATI",
     description:  "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
     stack: ["Fontawesome", "Firebase", "React","CSS"],
     SourceCode: "https://github.com/OmarFathy22/TAKATI",
@@ -17,7 +17,7 @@ export const ALL = [
   },
   {
     image: connectivea,
-    name: "Posts App",
+    name: "CONNECTIVEA",
     description:"REACT-BASED SOCIAL MEDIA APP FOR EASY CONNECTIONS",
     stack: ["MUI", "React", "Firebase"],
     SourceCode: "https://github.com/OmarFathy22/muiproject2-master",
@@ -25,7 +25,7 @@ export const ALL = [
   },
   {
     image: portofolio,
-    name: "Portfolio 3D App",
+    name: "3D Portfolio  App",
     description:"PORTFOLIO APP WITH SOME COOL 3D MODELS",
     stack: ["Styled-Components", "React", "Three.js"],
     SourceCode: "https://github.com/OmarFathy22/3D-portofolio",
@@ -33,7 +33,7 @@ export const ALL = [
   },
   {
     image: gym,
-    name: "Gym Exercises App",
+    name: "Way To Forma",
     description:  "WORKOUT APP BUILT WITH REACT TO SHOWCASE THE BEST EXERCISES",
     stack: ["Tailwind CSS",  "Firebase" , "React" , "API"],
     SourceCode: "https://github.com/OmarFathy22/dream-gym-clone-react",
@@ -77,7 +77,7 @@ export const VANILLA_JS = [
 export const REACT = [
   {
     image: taskati,
-    name: "Tasks App",
+    name: "TASKATI",
     description:  "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
     stack: ["Fontawesome", "Firebase", "React","CSS"],
     SourceCode: "https://picsum.photos/200/300",
