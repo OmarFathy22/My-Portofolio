@@ -38,13 +38,13 @@ function Contact() {
   };
 
   return (
-    <div className="lg:mx-auto flex items-center flex-col  justify-center px-[10%] mt-[100px]" id="#Contact">
+    <div className="lg:mx-auto h-[calc(100vh-300px)] flex items-center flex-col  justify-center px-[10%] mt-[100px]" id="#Contact">
       <Helmet>
         <meta name="Description" content="On this page you will find my Contact Information and a Contact form if you want to contact with me" />
         <title>Contact</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
-      <h1 data-aos="flip-right" className="text-[50px] font-bold  mb-[100px] text-[var(--primaryColor)] text-center">
+      <h1 data-aos="flip-right" className="text-[50px] font-bold  mb-[20px] text-[var(--primaryColor)] text-center">
         Keep in touch
       </h1>
       <div className="
