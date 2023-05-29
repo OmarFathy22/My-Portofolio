@@ -1,8 +1,6 @@
-import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 function AboutMe() {
-  const location = useLocation();
   return (
       <section data-aos="fade-down-left" className="min-h-[calc(100vh-200px)]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
       <Helmet>
