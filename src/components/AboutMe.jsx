@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 function AboutMe() {
   const location = useLocation();
   return (
-      <section data-aos="fade-down-left" className={`${location.pathname === '/About' ? "h-[calc(100vh-200px)]" : "h-[30vh]"} flex items-center flex-col justify-center px-[10%]`}>
+      <section data-aos="fade-down-left" className="min-h-[calc(100vh-200px)]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
       <Helmet>
         <meta name="Description" content="On this page you will find some information about me" />
         <title>About</title>

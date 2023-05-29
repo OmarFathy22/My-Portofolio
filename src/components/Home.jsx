@@ -7,7 +7,7 @@ import Skills from './Skills';
 import HomeTitle from './HomeTitle';
 function Home() {
   return (
-    <div className='flex flex-col gap-[100px] '>
+    <div className='flex flex-col  '>
         <Hero />
         <AboutMe/>
         <Skills/>
