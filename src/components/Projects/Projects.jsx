@@ -25,7 +25,7 @@ function Projects() {
             setProjects(item === 'ALL' ? ALL : item === 'VANILLA JS' ? VANILLA_JS : item === 'REACT' ? REACT : NEXT)
            }}
             key={index}
-            className={`text-white border-[1px] sm:text-[10px] w-[fit-content] border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${item === currBtn ? 'bg-[var(--primaryColor)]' : ''}`}
+            className={`text-white border-[1px] sm:text-[13px]  border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${item === currBtn ? 'bg-[var(--primaryColor)]' : ''}`}
           >
             {item}
           </button>
