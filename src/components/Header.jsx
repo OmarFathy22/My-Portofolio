@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-const Links = ["/", "About", "Skills", "Projects", "Testimonials", "Contact"];
+import { useLocation } from "react-router-dom";
+const Links = ["", "About", "Skills", "Projects", "Testimonials", "Contact"];
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
@@ -9,6 +10,8 @@ function Header() {
   const [shadow, setshodow] = useState(false);
   const [Active, setActive] = useState("/");
   const menuRef = useRef(null);
+  const location = useLocation()
+  console.log(location.pathname)
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -40,17 +43,14 @@ function Header() {
         {Links.map((item, index) => (
           <li
             key={index}
-            onClick={() => {
-              setActive(item);
-            }}
           >
             <Link
               className={`image-link relative transition-all hover:text-white text-[#858792] text-[20px] ${
-                item === Active ? "active" : ""
-              }`}
+                ('/' + item) === location.pathname  ? "active" : ""
+              }` }
               to={"/" + item !== "/" ? item : ""}
             >
-              {item !== "/" ? item : "Home"}
+              {item !== "" ? item : "Home"}
             </Link>
           </li>
         ))}

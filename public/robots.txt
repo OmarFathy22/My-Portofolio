@@ -1,2 +1,1 @@
 User-agent: *
-sitemap: https://omarfathy.pages.dev/About
