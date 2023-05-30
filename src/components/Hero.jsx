@@ -24,7 +24,7 @@ function Hero() {
             <h1 className='text-[var(--primaryColor)] sm-md:text-[30px] text-[70px]'>
                 <Typewriter 
                     options={{
-                        strings: ['OMAR FATHY', 'FRONT END DEVELOPER', 'FREELANCER'],
+                        strings: ['OMAR FATHY', 'FRONT END DEVELOPER'],
                         autoStart: true,
                         loop: true,
                     }}  
