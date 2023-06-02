@@ -2,12 +2,16 @@ import { buttons } from "./ProjectsData";
 import { ALL, VANILLA_JS, REACT, NEXT } from "./ProjectsData";
 import { useState } from "react";
 import { Helmet } from 'react-helmet-async';
+import { AiFillStar } from "react-icons/ai";
+
+
 const Animation = ["zoom-out-down" , "zoom-out-up" , "zoom-out","zoom-in-right","zoom-in-left","zoom-in-down","zoom-in-up","zoom-in","flip-down","flip-up","flip-right","flip-left","fade-down-left","fade-down-right","fade-up-left","fade-up-right","fade-left","fade-right","fade-down","fade-up" , "zoom-out-left" ,"zoom-out-right" ]
-function Projects() {
+function Projects({setOpen}) {
   const [projects, setProjects] = useState(ALL);
   const [currBtn , setcurrBtn] = useState('ALL')
+  console.log(open)
   return (
-    <div className="min-h-[100vh]  gap-[30px]  !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
+    <div className="min-h-[100vh]gap-[30px] !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
       <Helmet>
         <meta name="Description" content="On this page You will find my recent Projects that I was working on" />
         <title>Projects</title>
@@ -16,7 +20,7 @@ function Projects() {
       <h1 data-aos={Animation[Math.floor(Math.random() * Animation.length)]} className="text-[50px] font-bold mb-7 text-[var(--primaryColor)]">
         Projects
       </h1>
-      <div data-aos={Animation[Math.floor(Math.random() * Animation.length)]} style={{transition : "all 0.3s ease-in" , }} className={` px-5 flex sm:gap-[10px] gap-6 py-4 z-10 bg-[var(--primaryBackground)]`}>
+      <div data-aos={Animation[Math.floor(Math.random() * Animation.length)]} style={{transition : "all 0.3s ease-in" , }} className={` px-5 flex sm:gap-[10px] gap-6 py-4 z-1 bg-[var(--primaryBackground)]`}>
         {buttons.map((item, index) => (
           <button 
            
@@ -38,6 +42,7 @@ function Projects() {
             key={index}
             className="w-[400px] h-[500px]  sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
           >
+             
             <img
               className=" rounded-t-md !w-full !h-[200px]"
               src={item.image}
@@ -63,17 +68,24 @@ function Projects() {
                   </h3>
                 ))}
               </div>
-              <div className="w-full flex justify-around">
+              <div className="w-full flex justify-around gap-3">
                 <a href={item.SourceCode} target="_blank" rel="noreferrer" className="text-center w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px] ">
                   Source Code
                 </a>
                 <a  href={item.LiveDemo} target="_blank" rel="noreferrer" className="text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]">
-                  View Demo
+                  View App
                 </a>
+                {item.name === 'CONNECTIVEA' &&  <button onClick={() => {
+                  setOpen(true)
+                }} className="text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]">
+                  Video Demo
+                </button>}
+              {item.name === 'CONNECTIVEA' &&   <h1 className="star text-[var(--primaryColor)] absolute top-5 right-3 text-[25px]"><AiFillStar/></h1>}
               </div>
             </div>
           </div>
         ))}
+        
       </section>
     </div>
   );

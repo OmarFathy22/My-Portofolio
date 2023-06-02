@@ -83,7 +83,18 @@ body{
     width: 100%;
   }
 }
-.start{
-  
+.close_video:hover{
+  font-size:larger;
+  transition: all 0.2s;
 }
-
+.star{
+  animation: star_rotate 1s infinite linear ;
+}
+@keyframes star_rotate {
+  from {
+    transform: rotateY(45deg);
+  }
+  to {
+    transform: rotateY(225deg);
+  }
+}
