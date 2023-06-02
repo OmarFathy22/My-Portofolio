@@ -86,11 +86,11 @@ function Header() {
             >
               <Link
                 className={`image-link relative transition-all hover:text-white text-[#858792] text-[20px] ${
-                  item === Active ? "active" : ""
+                  ('/' + item) === location.pathname  ? "active" : ""
                 }`}
                 to={"/" + item !== "/" ? item : ""}
               >
-                {item !== "/" ? item : "Home"}
+                {item !== "" ? item : "Home"}
               </Link>
             </li>
           ))}
