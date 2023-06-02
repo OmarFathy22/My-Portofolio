@@ -80,7 +80,7 @@ function Projects({setOpen}) {
                 }} className="text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]">
                   Video Demo
                 </button>}
-              {item.name === 'CONNECTIVEA' &&   <h1 className="star text-[var(--primaryColor)] absolute top-5 right-3 text-[25px]"><AiFillStar/></h1>}
+              {item.name === 'CONNECTIVEA' &&   <h1 className="star z-[10000] text-[var(--primaryColor)] absolute top-5 right-3 text-[25px]"><AiFillStar/></h1>}
               </div>
             </div>
           </div>
