@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import logo1 from "../assets/anoni.jpg";
 import logo3 from "../assets/sobhi.jpg";
 import { Helmet } from 'react-helmet-async';
+import { Link } from "react-router-dom";
 
 const Sobhi = {
   id: 2,
@@ -104,6 +105,10 @@ function Testmonials() {
             </div>
           ))}
         </Slider>
+      </div>
+      <div className="w-full flex flex-col gap-3 justify-center items-center">
+        <Link to={"/Contact"} className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-8 hover:bg-[var(--primaryColor)] transition-all mt-[50px]'>Give Feedback</Link>
+        <p className="text-white text-center">You are welcome to provide your feedback, and I will include it in this section</p>
       </div>
     </div>
   );
