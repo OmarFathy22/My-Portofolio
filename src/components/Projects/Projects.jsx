@@ -49,9 +49,12 @@ function Projects({setOpen}) {
               alt="image"
             />
             <div className="mx-[10px] flex flex-col gap-[10px] items-center">
-              <h1 data-aos="fade-left" className="uppercase text-[20px] font-bold mb-3 text-[var(--primaryColor)]">
-                {item.name}
-              </h1>
+              <div className="flex items-center justify-center">
+                <h1 data-aos="fade-left" className="uppercase text-[20px] font-bold text-[var(--primaryColor)]">
+                  {item.name}
+                </h1>
+                  {item.name === 'CONNECTIVEA' &&   <h1 className="star absolute right-[24%] z-[10000] text-[var(--primaryColor)] text-[25px]"><AiFillStar/></h1>}
+              </div>
               <div className="bg-[var(--primaryColor)] w-[100px] h-[3px]" />
               <h3 className="text-white text-[15px] lowercase text-capitalize text-center">{item.description}</h3>
               {/* <p className="text-white text-justify">{item.description}</p> */}
@@ -80,7 +83,7 @@ function Projects({setOpen}) {
                 }} className="text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]">
                   Video Demo
                 </button>}
-              {item.name === 'CONNECTIVEA' &&   <h1 className="star z-[10000] text-[var(--primaryColor)] absolute top-5 right-3 text-[25px]"><AiFillStar/></h1>}
+              {/* {item.name === 'CONNECTIVEA' &&   <h1 className="star z-[10000] text-[var(--primaryColor)] absolute top-5 right-3 text-[25px]"><AiFillStar/></h1>} */}
               </div>
             </div>
           </div>
