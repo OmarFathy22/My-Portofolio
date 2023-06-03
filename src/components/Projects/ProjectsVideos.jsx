@@ -1,6 +1,6 @@
 const ProjectsVideos = ({ videoSrc, setOpen }) => {
   return (
-    <div className="fixed h-[100vh] w-[100vw] bg-[#222] flex justify-center items-center pt-[100px]">
+    <div className="z-[100000] fixed h-[100vh] w-[100vw] bg-[#222] flex justify-center items-center pt-[100px]">
       <video
         controls
         autoPlay
