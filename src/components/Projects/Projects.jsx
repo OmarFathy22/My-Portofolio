@@ -3,12 +3,14 @@ import { ALL, VANILLA_JS, REACT, NEXT } from "./ProjectsData";
 import { useState } from "react";
 import { Helmet } from 'react-helmet-async';
 import { AiFillStar } from "react-icons/ai";
+import ReactGA from 'react-ga';
 
 
 const Animation = ["zoom-out-down" , "zoom-out-up" , "zoom-out","zoom-in-right","zoom-in-left","zoom-in-down","zoom-in-up","zoom-in","flip-down","flip-up","flip-right","flip-left","fade-down-left","fade-down-right","fade-up-left","fade-up-right","fade-left","fade-right","fade-down","fade-up" , "zoom-out-left" ,"zoom-out-right" ]
 function Projects({setOpen}) {
   const [projects, setProjects] = useState(ALL);
-  const [currBtn , setcurrBtn] = useState('ALL')
+  const [currBtn , setcurrBtn] = useState('ALL') 
+  ReactGA.pageview(window.location.pathname + window.location.search);
   console.log(open)
   return (
     <div className="min-h-[100vh]gap-[30px] !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">

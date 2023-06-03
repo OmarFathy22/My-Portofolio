@@ -6,6 +6,8 @@ import logo1 from "../assets/anoni.jpg";
 import logo3 from "../assets/sobhi.jpg";
 import { Helmet } from 'react-helmet-async';
 import { Link } from "react-router-dom";
+import ReactGA from 'react-ga';
+
 
 const Sobhi = {
   id: 2,
@@ -31,6 +33,7 @@ const testimonials = [
   },
 ]
 function Testmonials() {
+  ReactGA.pageview(window.location.pathname + window.location.search);
   var settings = {
     dots: false,
     infinite: true,

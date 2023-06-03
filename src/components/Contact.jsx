@@ -5,8 +5,10 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { Helmet } from "react-helmet-async";
+import ReactGA from 'react-ga';
 
 function Contact() {
+  ReactGA.pageview(window.location.pathname + window.location.search);
   const {
     register,
     handleSubmit,

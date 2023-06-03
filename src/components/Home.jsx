@@ -7,8 +7,11 @@ import Skills from './Skills';
 import HomeTitle from './HomeTitle';
 import ProjectVideo from './Projects/ProjectsVideos'
 import { useState } from 'react';
+import ReactGA from 'react-ga';
+
 function Home() {
   const [open , setOpen] = useState(false)
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className='flex flex-col  '>
         <Hero />

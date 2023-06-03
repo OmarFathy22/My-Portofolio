@@ -1,5 +1,6 @@
 import  { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import ReactGA from 'react-ga';
 
 const skills = [
   { name: "HTML", percentage: "95%" },
@@ -22,7 +23,7 @@ const skills = [
 function AboutMe() {
   const sectionRef = useRef(null);
   const [hasAnimated, setHasAnimated] = useState(false);
-
+  ReactGA.pageview(window.location.pathname + window.location.search);
   useEffect(() => {
     const hasAnimatedStorage = JSON.parse(localStorage.getItem('hasAnimated'));
     if (hasAnimatedStorage) {
