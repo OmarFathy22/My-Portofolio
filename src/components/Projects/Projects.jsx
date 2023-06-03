@@ -55,7 +55,7 @@ function Projects({setOpen}) {
                 <h1 data-aos="fade-left" className="uppercase text-[20px] font-bold text-[var(--primaryColor)]">
                   {item.name}
                 </h1>
-                  {item.name === 'CONNECTIVEA' &&   <h1 data-aos="fade-left" className="star absolute right-[20%] z-[10000] text-[var(--primaryColor)] text-[25px]"><AiFillStar/></h1>}
+                  {item.name === 'CONNECTIVEA' &&   <h1 data-aos="fade-left" className="star absolute right-[20%] z-[10] text-[var(--primaryColor)] text-[25px]"><AiFillStar/></h1>}
               </div>
               <div className="bg-[var(--primaryColor)] w-[100px] h-[3px]" />
               <h3 className="text-white text-[15px] lowercase text-capitalize text-center">{item.description}</h3>
