@@ -37,7 +37,7 @@ export const ALL = [
     description:  "WORKOUT APP BUILT WITH REACT TO SHOWCASE THE BEST EXERCISES",
     stack: ["Tailwind CSS",  "Firebase" , "React" , "API"],
     SourceCode: "https://github.com/OmarFathy22/dream-gym-clone-react",
-    LiveDemo: "https://dream-gym-clone-react.pages.dev/",
+    LiveDemo: "https://way-to-forma.web.app/",
   },
   {
     image: memory,
@@ -105,7 +105,7 @@ export const REACT = [
     description:  "WORKOUT APP BUILT WITH REACT TO SHOWCASE THE BEST EXERCISES",
     stack: ["Tailwind CSS",  "Firebase" , "React" , "API"],
     SourceCode: "https://github.com/OmarFathy22/dream-gym-clone-react",
-    LiveDemo: "https://dream-gym-clone-react.pages.dev/",
+    LiveDemo: "https://way-to-forma.web.app/",
   },
 ];
 export const NEXT = [
