@@ -45,7 +45,7 @@ export const ALL = [
     description:"  SIMPLE COOL GAME FOR TESTING YOUR MEMORY MEMORY CARD GAME  SKILLS AND TO HAVE SOME FUN",
     stack: ['HTML', 'CSS', 'JS'],
     SourceCode: 'https://github.com/OmarFathy22/Memory_card_GameV2',
-    LiveDemo: 'https://omarfathy22.github.io/Memory_card_GameV2/',
+    LiveDemo: 'https://omarfathy22.github.io/Memory_Card_Game/',
   },
   {
     image: bootcamp,
@@ -63,7 +63,7 @@ export const VANILLA_JS = [
     description: 'SIMPLE COOL GAME FOR TESTING YOUR MEMORY SKILLS AND TO HAVE SOME FUN',
     stack: ['HTML', 'CSS', 'JS'],
     SourceCode: 'https://github.com/OmarFathy22/Memory_card_GameV2',
-    LiveDemo: 'https://omarfathy22.github.io/Memory_card_GameV2/',
+    LiveDemo: 'https://omarfathy22.github.io/Memory_Card_Game/',
   },
   {
     image: bootcamp,
