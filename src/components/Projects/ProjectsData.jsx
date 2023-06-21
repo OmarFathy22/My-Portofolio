@@ -25,7 +25,7 @@ export const ALL = [
   },
   {
     image: portofolio,
-    name: "3D Portfolio  App",
+    name: "3D Portfolio App",
     description:"PORTFOLIO APP WITH SOME COOL 3D MODELS",
     stack: ["Styled-Components", "React", "Three.js"],
     SourceCode: "https://github.com/OmarFathy22/3D-portofolio",
@@ -52,7 +52,7 @@ export const ALL = [
     name: 'JS Bootcamp',
     description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
     stack: ['HTML', 'CSS', 'JS'],
-    SourceCode: 'https://github.com/OmarFathy22/Memory_card_GameV2',
+    SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
     LiveDemo: 'https://project-afc16.web.app/',
   },
 ];
@@ -62,7 +62,7 @@ export const VANILLA_JS = [
     name: 'Memory Card Game',
     description: 'SIMPLE COOL GAME FOR TESTING YOUR MEMORY SKILLS AND TO HAVE SOME FUN',
     stack: ['HTML', 'CSS', 'JS'],
-    SourceCode: 'https://github.com/OmarFathy22/Memory_card_GameV2',
+    SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
     LiveDemo: 'https://omarfathy22.github.io/Memory_Card_Game/',
   },
   {
@@ -70,7 +70,7 @@ export const VANILLA_JS = [
     name: 'JS Bootcamp',
     description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
     stack: ['HTML', 'CSS', 'JS'],
-    SourceCode: 'https://github.com/OmarFathy22/Memory_card_GameV2',
+    SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
     LiveDemo: 'https://project-afc16.web.app/',
   },
 ];
