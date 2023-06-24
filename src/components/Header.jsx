@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const Links = ["", "About", "Skills", "Projects", "Testimonials", "Contact"];
-import logo from "../assets/logo.png";
+import logo from "../assets/newLogo.png";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { useRef, useEffect } from "react";
@@ -34,8 +34,8 @@ function Header() {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-      <div data-aos="fade-right" className="mr-[100px]">
-          <img src={logo} alt="image" className="w-[100px] h-[100px] logo" />
+      <div data-aos="fade-right" className="100px">
+          <img src={logo} alt="image" className="w-[200px] h-[100px] logo" />
       </div>
         
       </Link>

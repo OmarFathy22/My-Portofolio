@@ -2,7 +2,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { FaFacebookSquare } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "../assets/newLogo.png";
 import { Link } from "react-router-dom";
 const socialLinks = [
   "https://m.facebook.com/profile.php?id=100004875043718",
@@ -36,7 +36,7 @@ function Footer() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <img src={logo} alt="" className="w-[100px] h-[100px] mx-[20px]" />
+            <img src={logo} alt="" className="w-[200px] h-[100px] mx-[20px]" />
           </Link>
           <a
             href={socialLinks[2]}
