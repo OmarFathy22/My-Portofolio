@@ -27,15 +27,15 @@ function Header() {
     }
   };
   return (
-    <header className="sm:px-3 px-10 z-[200] fixed top-0 bg-[#262525] flex justify-around items-center w-full h-[10vh] ">
+    <header className="pr-10  z-[200] fixed top-0 bg-[#262525] flex justify-between items-center w-full h-[10vh] ">
       <Link
         to="/"
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-      <div data-aos="fade-right" className="100px">
-          <img src={logo} alt="image" className="w-[200px] h-[100px] logo" />
+      <div data-aos="fade-right" className="">
+          <img src={logo} alt="image" className="w-[200px] h-[100px]  " />
       </div>
         
       </Link>

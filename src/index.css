@@ -107,7 +107,7 @@ body{
   transition: all 0.2s;
 }
 .star{
-  animation: star_rotate 1s infinite linear ;
+  animation: star_rotate 1s infinite linear  ;
 }
 @keyframes star_rotate {
   from {
@@ -115,5 +115,23 @@ body{
   }
   to {
     transform: rotateY(225deg);
+  }
+}
+.logo {
+  animation: logoani 5s infinite;
+  transition: all 0.5s;
+}
+
+@keyframes logoani {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
   }
 }

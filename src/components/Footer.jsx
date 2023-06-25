@@ -13,7 +13,7 @@ const socialLinks = [
 function Footer() {
   return (
       <div className="bg-[#111] h-[100px] flex flex-col justify-center items-center flex-shrink-0  ">
-        <div className="flex justify-center items-center gap-[20px]">
+        <div className="flex justify-center items-center gap-[15px]">
           <a
             href={socialLinks[3]}
             target="_blank"
@@ -36,7 +36,7 @@ function Footer() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <img src={logo} alt="" className="w-[200px] h-[100px] mx-[20px]" />
+            <img src={logo} alt="" className="w-[200px] h-[100px]" />
           </Link>
           <a
             href={socialLinks[2]}
