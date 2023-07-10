@@ -20,9 +20,9 @@ function Hero() {
         <title>Home</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
-      <div data-aos="fade-right" className='h-full hidden lg:flex mt-[35px]'>
+      <div data-aos="fade-right" className='h-[620px] w-[1000px] hidden lg:flex mt-[35px]'>
       
-        <img src={logo} alt="" className='w-[100%] h-full object-contain' />
+        <img src={logo} alt="" className='w-full h-full ' />
 
       </div>
       <div data-aos="fade-left" className='absolute lg:static top-0 right-0 bottom-0 left-0 flex justify-center' >
@@ -31,13 +31,18 @@ function Hero() {
             <h1 className='text-[var(--primaryColor)] sm-md:text-[30px] lg:text-[50px] text-[70px]'>
                 <Typewriter 
                     options={{
-                        strings: ['OMAR FATHY', 'FRONT END DEVELOPER'],
+                        strings: ['OMAR FATHY', 'WEB DEVELOPER'],
                         autoStart: true,
                         loop: true,
                     }}  
                 />
             </h1>
-            <p className='text-white text-center'> I consistently stay up-to-date with the latest web technologies and trends, and I collaborate closely with clients to ensure their vision is brought to life. With a user-centered design approach, I take pride in delivering high-quality output that exceeds client expectations and provides a positive impact on the end-users.</p>
+            <p className='text-white text-center'> 
+            Motivated junior web developer looking for a role as full-stack web developer. 
+            Passionate about building elegant and functional websites that provide seamless user experiences.
+            Enjoy solving complex problems and building custom solutions that meet the unique needs of my clients.
+            Outside of work, I enjoy spending time at the gym, socializing, and watching TV Series.
+            </p>
             <a href={my_cv} download className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]'>Download CV</a>
               <div className="flex justify-center items-center gap-[15px]">
           <a
