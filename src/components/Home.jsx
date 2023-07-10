@@ -16,7 +16,6 @@ function Home() {
   return (
     <div className='flex flex-col  '>
         <Hero />
-        <AboutMe/>
         <Skills/>
         <Projects setOpen={setOpen} setVideoDemo = {setVideoDemo}/>
         <Testmonials/>

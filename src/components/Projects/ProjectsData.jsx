@@ -1,20 +1,12 @@
  import gym from "../../assets/cardImage/gym.png";
  import memory from "../../assets/cardImage/memory_card.png";
- import bootcamp from "../../assets/cardImage/bootcamb.png";
+//  import bootcamp from "../../assets/cardImage/bootcamb.png";
  import portofolio from "../../assets/cardImage/portofolio3d.png";
  import taskati from "../../assets/cardImage/taskati.png";
  import connectivea from "../../assets/cardImage/connectivea.png";
 
-export const buttons = ["ALL", "VANILLA JS" , "REACT", "NEXT.JS   "];
+export const buttons = ["ALL", "VANILLA JS" , "REACT"];
 export const ALL = [
-  {
-    image: taskati,
-    name: "TASKATI",
-    description:  "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
-    stack: ["Fontawesome", "Firebase", "React","CSS"],
-    SourceCode: "https://github.com/OmarFathy22/TAKATI",
-    LiveDemo: "https://taskati.pages.dev/",
-  },
   {
     image: connectivea,
     name: "CONNECTIVEA",
@@ -22,6 +14,19 @@ export const ALL = [
     stack: ["MUI", "React", "Firebase"],
     SourceCode: "https://github.com/OmarFathy22/muiproject2-master",
     LiveDemo: "https://connectiveaa.web.app",
+    video:"https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FConnectivea.mp4?alt=media&token=3db91fe2-f311-4482-8310-3ff4ed67fbfa&_gl=1*1kajvhq*_ga*MjE0NDEzNDExNy4xNjg0MDMyMTIy*_ga_CW55HF8NVT*MTY4NTczNTU2MC40Mi4xLjE2ODU3MzY4MTcuMC4wLjA"
+    ,youtubeId: "q_Bo7OwHkpQ"
+
+  },
+  {
+    image: taskati,
+    name: "TASKATI",
+    description:  "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
+    stack: ["Fontawesome", "Firebase", "React","CSS"],
+    SourceCode: "https://github.com/OmarFathy22/TAKATI",
+    LiveDemo: "https://taskati.pages.dev/",
+    video: "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FTaskati.mp4?alt=media&token=8a6c135a-f004-496e-a2a6-9aaeaa02e27c"
+    ,youtubeId: "RlSml970YCM"
   },
   {
     image: portofolio,
@@ -30,6 +35,8 @@ export const ALL = [
     stack: ["Styled-Components", "React", "Three.js"],
     SourceCode: "https://github.com/OmarFathy22/3D-portofolio",
     LiveDemo: "https://3d-portofolio.pages.dev",
+    video: "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FUntitled%20video%20-%20Made%20with%20Clipchamp%20(3).mp4?alt=media&token=37a6b2bd-ca7a-4307-b10b-c52bb59e9a08"
+    ,youtubeId: "oE05bOgNNNI"
   },
   {
     image: gym,
@@ -38,6 +45,9 @@ export const ALL = [
     stack: ["Tailwind CSS",  "Firebase" , "React" , "API"],
     SourceCode: "https://github.com/OmarFathy22/dream-gym-clone-react",
     LiveDemo: "https://way-to-forma.web.app/",
+    video:"https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2Fway%20to%20forma.mp4?alt=media&token=580317a5-a2e4-4a2a-9ea1-994136724489",
+    youtubeId: "RjkK7wwZT-k"
+
   },
   {
     image: memory,
@@ -46,15 +56,18 @@ export const ALL = [
     stack: ['HTML', 'CSS', 'JS'],
     SourceCode: 'https://github.com/OmarFathy22/Memory_card_GameV2',
     LiveDemo: 'https://omarfathy22.github.io/Memory_Card_Game/',
+    video: "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6"
+    ,youtubeId: "k3K7-hI0tTk"
   },
-  {
-    image: bootcamp,
-    name: 'JS Bootcamp',
-    description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
-    stack: ['HTML', 'CSS', 'JS'],
-    SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
-    LiveDemo: 'https://project-afc16.web.app/',
-  },
+  // {
+  //   image: bootcamp,
+  //   name: 'JS Bootcamp',
+  //   description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
+  //   stack: ['HTML', 'CSS', 'JS'],
+  //   SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
+  //   LiveDemo: 'https://project-afc16.web.app/',
+
+  // },
 ];
 export const VANILLA_JS = [
   {
@@ -64,15 +77,17 @@ export const VANILLA_JS = [
     stack: ['HTML', 'CSS', 'JS'],
     SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
     LiveDemo: 'https://omarfathy22.github.io/Memory_Card_Game/',
+    video:"https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6"
+    ,youtubeId: "k3K7-hI0tTk"
   },
-  {
-    image: bootcamp,
-    name: 'JS Bootcamp',
-    description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
-    stack: ['HTML', 'CSS', 'JS'],
-    SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
-    LiveDemo: 'https://project-afc16.web.app/',
-  },
+  // {
+  //   image: bootcamp,
+  //   name: 'JS Bootcamp',
+  //   description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
+  //   stack: ['HTML', 'CSS', 'JS'],
+  //   SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
+  //   LiveDemo: 'https://project-afc16.web.app/',
+  // },
 ];
 export const REACT = [
   {
@@ -82,6 +97,8 @@ export const REACT = [
     stack: ["Fontawesome", "Firebase", "React","CSS"],
     SourceCode: "https://picsum.photos/200/300",
     LiveDemo: "https://taskati.pages.dev/",
+    video:"https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FTaskati.mp4?alt=media&token=8a6c135a-f004-496e-a2a6-9aaeaa02e27c"
+    ,youtubeId: "RlSml970YCM"
   },
   {
     image: connectivea,
@@ -90,6 +107,9 @@ export const REACT = [
     stack: ["MUI", "React", "Firebase"],
     SourceCode: "https://picsum.photos/200/300",
     LiveDemo: "https://postati.netlify.app/",
+    video:"https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FConnectivea.mp4?alt=media&token=3db91fe2-f311-4482-8310-3ff4ed67fbfa&_gl=1*1kajvhq*_ga*MjE0NDEzNDExNy4xNjg0MDMyMTIy*_ga_CW55HF8NVT*MTY4NTczNTU2MC40Mi4xLjE2ODU3MzY4MTcuMC4wLjA"
+    ,youtubeId: "q_Bo7OwHkpQ"
+
   },
   {
     image: portofolio,
@@ -98,6 +118,9 @@ export const REACT = [
     stack: ["Styled-Components", "React", "Three.js"],
     SourceCode: "https://picsum.photos/200/300",
     LiveDemo: "https://portofolio-morata.web.app/",
+    video:  "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FUntitled%20video%20-%20Made%20with%20Clipchamp%20(3).mp4?alt=media&token=37a6b2bd-ca7a-4307-b10b-c52bb59e9a08"
+    ,youtubeId: "oE05bOgNNNI"
+
   },
   {
     image: gym,
@@ -106,6 +129,8 @@ export const REACT = [
     stack: ["Tailwind CSS",  "Firebase" , "React" , "API"],
     SourceCode: "https://github.com/OmarFathy22/dream-gym-clone-react",
     LiveDemo: "https://way-to-forma.web.app/",
+    video:"https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2Fway%20to%20forma.mp4?alt=media&token=580317a5-a2e4-4a2a-9ea1-994136724489"
+    ,youtubeId: "RjkK7wwZT-k"
   },
 ];
 export const NEXT = [
@@ -115,6 +140,6 @@ export const NEXT = [
     description:  "WORKOUT APP BUILT WITH REACT TO SHOWCASE THE BEST EXERCISES",
     stack: ["Tailwind CSS",  "Firebase" , "Next.js" , "API"],
     SourceCode: "https://github.com/OmarFathy22/my-dream-gym",
-    LiveDemo: "https://way-to-forma.vercel.app/",
+    LiveDemo: "https://way-to-forma.vercel.app/"
   },
 ];

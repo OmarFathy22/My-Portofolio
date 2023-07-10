@@ -1,62 +1,30 @@
-import { FaGithubSquare } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { BsLinkedin } from "react-icons/bs";
-import { FaFacebookSquare } from "react-icons/fa";
-import logo from "../assets/newLogo.png";
-import { Link } from "react-router-dom";
-const socialLinks = [
-  "https://m.facebook.com/profile.php?id=100004875043718",
-  "https://www.linkedin.com/in/omar-fathy-a3b987223",
-  "https://www.instagram.com/o_fathy_/",
-  "https://github.com/OmarFathy22",
-];
+
+import Typewriter from "typewriter-effect";
 function Footer() {
   return (
-      <div className="bg-[#111] h-[100px] flex flex-col justify-center items-center flex-shrink-0  ">
-        <div className="flex justify-center items-center gap-[15px]">
-          <a
-            href={socialLinks[3]}
-            target="_blank"
-            rel="noreferrer"
-            className="text-[var(--primaryColor)] text-[25px] hover:opacity-[0.9] transition-all"
-          >
-            <FaGithubSquare />
-          </a>
-          <a
-            href={socialLinks[1]}
-            target="_blank"
-            rel="noreferrer"
-            className="text-[var(--primaryColor)] text-[22px] hover:opacity-[0.9] transition-all"
-          >
-            <BsLinkedin />
-          </a>
-          <Link
-            to={"/"}
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-          >
-            <img src={logo} alt="" className="w-[200px] h-[100px]" />
-          </Link>
-          <a
-            href={socialLinks[2]}
-            target="_blank"
-            rel="noreferrer"
-            className="text-[var(--primaryColor)] text-[30px] hover:opacity-[0.9] transition-all"
-          >
-            <AiFillInstagram />
-          </a>
-          <a
-            href={socialLinks[0]}
-            target="_blank"
-            rel="noreferrer"
-            className="text-[var(--primaryColor)] text-[25px] hover:opacity-[0.9] transition-all"
-          >
-            <FaFacebookSquare />
-          </a>
-        </div>
-        {/* <h1  className='text-white text-[20px] font-extrabold border-b-[var(--primaryColor)] border-b-[3px] cursor-default'>OMAR FATHY</h1> */}
-      </div>
+    <div className="bg-[#111] h-[100px] flex flex-col justify-center items-center flex-shrink-0  ">
+      <h1 className="text-[var(--primaryColor)] sm-md:text-[20px] text-[20px] text-center">
+        <Typewriter
+          options={{
+            strings: [
+              `" It's not just about being better. It's about being different. You need to give people a reason to choose your business "`,
+              `" Keep going everything comes to you at the right time "`,
+              `" The journey of a thousand miles begins with one step "`,
+              `" Don't let the noise of others' opinions drown out your own inner voice "`,
+              `" Don't count the days, make the days count "`,
+              `" Nothing is impossible, the word itself says “I’m possible! "`,
+              `" The best preparation for tomorrow is doing your best today "`,
+            ],
+            timeout: 10,
+            autoStart: true,
+            loop: true,
+            deleteSpeed	: 10,
+            delay: 70,
+            pauseFor: 5000,
+          }}
+        />
+      </h1>
+    </div>
   );
 }
 

@@ -1,8 +1,8 @@
 import { buttons } from "./ProjectsData";
 import { ALL, VANILLA_JS, REACT, NEXT } from "./ProjectsData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { AiFillStar } from "react-icons/ai";
+// import { AiFillStar } from "react-icons/ai";
 import ReactGA from "react-ga";
 
 const Animation = [
@@ -32,6 +32,11 @@ const Animation = [
 function Projects({ setOpen, setVideoDemo }) {
   const [projects, setProjects] = useState(ALL);
   const [currBtn, setcurrBtn] = useState("ALL");
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
   ReactGA.pageview(window.location.pathname + window.location.search);
   console.log(open);
   return (
@@ -83,13 +88,28 @@ function Projects({ setOpen, setVideoDemo }) {
           <div
             data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className="w-[400px] h-[500px]  sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
+            className="w-[400px] h-[630px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
           >
-            <img
-              className=" rounded-t-md !w-full !h-[200px]"
-              src={item.image}
-              alt="image"
-            />
+            {isLoaded && (
+              <div>
+                {item.video ? (
+                  <iframe
+                    height="100%"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="eager"
+                    className="!w-full h-[320px] border-0  !rounded-lg "
+                    src={"https://www.youtube.com/embed/" + item?.youtubeId}
+                  ></iframe>
+                ) : (
+                  <img
+                    className="!w-full h-[320px] border-0  !rounded-lg "
+                    src={item.image}
+                    alt={item.name}
+                  />
+                )}
+              </div>
+            )}
             <div className="mx-[10px] flex flex-col gap-[10px] items-center">
               <div className="flex items-center justify-center">
                 <h1
@@ -101,7 +121,7 @@ function Projects({ setOpen, setVideoDemo }) {
                 {/* {item.name === 'CONNECTIVEA' &&   <h1 data-aos="fade-left" className="star absolute right-[70px] xxl:right-[90px] z-[10] text-[var(--primaryColor)] text-[25px]"><AiFillStar/></h1>} */}
               </div>
               <div className="bg-[var(--primaryColor)] w-[100px] h-[3px]" />
-              <h3 className="text-white text-[15px] lowercase text-capitalize text-center">
+              <h3 className="text-white text-[15px] lowercase text-capitalize text-center h-[40px]">
                 {item.description}
               </h3>
               {/* <p className="text-white text-justify">{item.description}</p> */}
@@ -143,7 +163,7 @@ function Projects({ setOpen, setVideoDemo }) {
                 >
                   View App
                 </a>
-                {item.name !== "JS Bootcamp" && (
+                {/* {item.name !== "JS Bootcamp" && (
                   <button
                     onClick={() => {
                       if (item.name === "CONNECTIVEA") {
@@ -173,7 +193,7 @@ function Projects({ setOpen, setVideoDemo }) {
                   >
                     Video Demo
                   </button>
-                )}
+                )} */}
                 {/* {item.name === 'CONNECTIVEA' &&   <h1 className="star z-[10000] text-[var(--primaryColor)] absolute top-5 right-3 text-[25px]"><AiFillStar/></h1>} */}
               </div>
             </div>

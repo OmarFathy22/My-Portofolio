@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-const Links = ["", "About", "Skills", "Projects", "Testimonials", "Contact"];
+const Links = ["", "Skills", "Projects", "Testimonials", "Contact"];
 import logo from "../assets/newLogo.png";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
@@ -35,7 +35,7 @@ function Header() {
         }}
       >
       <div data-aos="fade-right" className="">
-          <img src={logo} alt="image" className="w-[200px] h-[100px]  " />
+          <img src={logo} alt="image" className="w-[200px] h-[100px] " />
       </div>
         
       </Link>
