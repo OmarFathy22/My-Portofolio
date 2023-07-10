@@ -20,12 +20,12 @@ function Hero() {
         <title>Home</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
-      <div data-aos="fade-right" className='h-[620px] w-[1000px] hidden lg:flex mt-[35px]'>
+      <div  className='HeroLeft h-[620px] w-[1000px] hidden lg:flex mt-[35px]'>
       
         <img src={logo} alt="" className='w-full h-full ' />
 
       </div>
-      <div data-aos="fade-left" className='absolute lg:static top-0 right-0 bottom-0 left-0 flex justify-center' >
+      <div  className='HeroRight absolute lg:static top-0 right-0 bottom-0 left-0 flex justify-center' >
          <div className='h-full sm:w-[90%] w-[80%] flex flex-col gap-[30px] justify-center items-center'>
             <h1 className='text-white text-[20px] font-semibold'>Hello I&apos;M</h1>
             <h1 className='text-[var(--primaryColor)] sm-md:text-[30px] lg:text-[50px] text-[70px]'>

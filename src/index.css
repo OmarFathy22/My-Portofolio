@@ -94,6 +94,14 @@ body{
   animation: animate_skills 1s linear forwards;
 
 }
+.HeroLeft{
+  animation: HeroLeft 1.3s linear forwards;
+  transition: all 4s;
+}
+.HeroRight{
+  animation: HeroRight 1.8s linear forwards;
+  transition: all 4s;
+}
 @keyframes animate_skills {
   0%{
     width: 0;
@@ -135,3 +143,33 @@ body{
     opacity: 0.4;
   }
 }
+
+@keyframes HeroLeft{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes HeroRight{
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
