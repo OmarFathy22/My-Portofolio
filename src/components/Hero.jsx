@@ -81,7 +81,7 @@ function Hero() {
         </div>
          </div>
       </div>
-      <div className='w-full h-8 bg-[--primaryColor] absolute bottom-[-30px] left-0 rounded-b-full '></div>
+      <div className='w-full h-8 bg-[--primaryColor] absolute bottom-[-30px] left-0 rounded-b-full lg:block hidden '></div>
     </div>
   )
 }
