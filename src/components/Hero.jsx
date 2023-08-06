@@ -14,15 +14,15 @@ const socialLinks = [
 ];
 function Hero() {
   return (
-    <div className="h-[90vh] mt-[10vh]  w-full relative flex lg:flex-1  ">
+    <div  className="h-[90vh] mt-[10vh]  w-full relative flex lg:flex-1   ">
       <Helmet>
         <meta name="Description" content="this is my home page" />
         <title>Home</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
-      <div  className='HeroLeft h-[620px] w-[1000px] hidden lg:flex mt-[35px]'>
+      <div  className='HeroLeft h-[620px] w-[1000px]  hidden lg:flex mt-[35px]'>
       
-        <img src={logo} alt="" className='w-full h-full ' />
+        <img src={logo} alt="" className='w-full h-full object-contain translate-y-10 sticky top-0 right-0 left-0 bottom-0 ' />
 
       </div>
       <div  className='HeroRight absolute lg:static top-0 right-0 bottom-0 left-0 flex justify-center' >
@@ -81,6 +81,7 @@ function Hero() {
         </div>
          </div>
       </div>
+      <div className='w-full h-8 bg-[--primaryColor] absolute bottom-[-30px] left-0 rounded-b-full '></div>
     </div>
   )
 }

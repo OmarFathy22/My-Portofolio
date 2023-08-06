@@ -65,7 +65,7 @@ function AboutMe() {
   }, []);
   
   return (
-    <section  data-aos="zoom-in-up" className="mb-[50px] xxl:mb-0 flex items-center flex-col min-h-[calc(100vh-(13.2vh+100px))]  justify-center px-[10%]  mt-[100px] ">
+    <section  data-aos="zoom-in-up" className=" mb-[50px] xxl:mb-0 flex items-center flex-col min-h-[calc(100vh-(13.2vh+100px))]  justify-center px-[10%]  mt-[100px] ">
       <Helmet>
         <meta name="Description" content="On this page you will find my skills section" />
         <title>Skills</title>
