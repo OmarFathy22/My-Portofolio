@@ -14,19 +14,19 @@ const socialLinks = [
 ];
 function Hero() {
   return (
-    <div  className="h-[90vh] mt-[10vh]  w-full relative flex lg:flex-1   ">
+    <div  className=" w-full px-[7%] max-1300:px-[3%] max-1100:px-[1%] mt-[10vh]   relative flex flex-row-reverse  items-center max-1200:flex-col   ">
       <Helmet>
         <meta name="Description" content="this is my home page" />
         <title>Home</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
-      <div  className='HeroLeft h-[620px] w-[1000px]  hidden lg:flex mt-[35px]'>
+      <div  className='HeroLeft  h-[620px] w-full mt-[35px] flex flex-1 justify-end max-1200:justify-center max-1200:mb-[30px] items-center'>
       
-        <img src={logo} alt="" className='w-full h-full object-contain translate-y-10 sticky top-0 right-0 left-0 bottom-0 ' />
+        <img src={logo} alt="" className='AnimatedHero w-[500px] h-[500px] sm:w-[350px] sm:h-[350px] pt-2    border-[1px] border-[--primaryColor] rounded-full  object-contain  sticky top-0 right-0 left-0 bottom-0 ' />
 
       </div>
-      <div  className='HeroRight absolute lg:static top-0 right-0 bottom-0 left-0 flex justify-center' >
-         <div className='h-full sm:w-[90%] w-[80%] flex flex-col gap-[30px] justify-center items-center'>
+      <div  className='HeroRight  flex justify-center flex-1' >
+         <div className='h-full w-full flex flex-col gap-[30px] justify-center items-center'>
             <h1 className='text-white text-[20px] font-semibold'>Hello I&apos;M</h1>
             <h1 className='text-[var(--primaryColor)] sm-md:text-[30px] lg:text-[50px] text-[70px]'>
                 <Typewriter 
@@ -81,7 +81,6 @@ function Hero() {
         </div>
          </div>
       </div>
-      <div className='w-full h-8 bg-[--primaryColor] absolute bottom-[-30px] left-0 rounded-b-full lg:block hidden '></div>
     </div>
   )
 }

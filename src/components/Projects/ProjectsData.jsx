@@ -5,10 +5,6 @@ export const ALL = [
     description: "Fiverr clone built with MERN stack and Tailwind CSS",
     stack: [
       "MERN STACK",
-      "MongoDB",
-      "Express",
-      "React",
-      "Node.js",
       "Tailwind CSS",
     ],
     SourceCode: "https://github.com/OmarFathy22/Kizerr-project",
@@ -105,10 +101,6 @@ export const REACT = [
     description: "Fiverr clone built with MERN stack and Tailwind CSS",
     stack: [
       "MERN STACK",
-      "MongoDB",
-      "Express",
-      "React",
-      "Node.js",
       "Tailwind CSS",
     ],
     SourceCode: "https://github.com/OmarFathy22/Kizerr-project",

@@ -13,6 +13,8 @@ export default {
       'lg': { 'min': '1024px'},
       'xl': { 'min': '1200px'},
       'xxl': { 'min': '1400px'},
+      'max-1300':{'max':"1300px"},
+      'max-1200':{'max':"1200px"},
     },
   },
   plugins: [],

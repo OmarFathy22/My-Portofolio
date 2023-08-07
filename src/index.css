@@ -172,3 +172,19 @@ body{
     opacity: 1;
   }
 }
+.AnimatedHero{
+  animation: animateHero infinite ease-in-out;
+  animation: animateHero 7s ease-in-out 2s infinite ;
+  transition: all 1s;
+}
+@keyframes animateHero {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
