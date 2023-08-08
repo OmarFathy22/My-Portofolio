@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const Links = ["", "Skills", "Projects", "Testimonials", "Contact"];
 import logo from "../assets/newLogo.png";
@@ -26,6 +26,10 @@ function Header() {
       setshodow(false);
     }
   };
+  const navigate = useNavigate();
+  const Nav = () => {
+    navigate("/");
+  }
   return (
     <header className="pr-10  z-[200] fixed top-0 bg-[#262525] flex justify-between items-center w-full sm:h-[7vh] h-[10vh] ">
       <Link
@@ -34,9 +38,9 @@ function Header() {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-        <div data-aos="fade-right" className="">
+        <div data-aos="fade-left" className="">
           {/* <img src={logo} alt="image" className="w-[200px] h-[100px] " /> */}
-          <h1 className="text-[--primaryColor]   w-[250px]  logoFont text-center  uppercase text-[30px]">
+          <h1 onClick={Nav} className="text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  logoFont text-center  uppercase text-[30px]">
             Omar Fathy
           </h1>
         </div>
@@ -58,7 +62,7 @@ function Header() {
           </li>
         ))}
       </ul>
-      <div className="flex justify-end lg:hidden xl:hidden w-[70%]">
+      <div data-aos="fade-right" className="flex justify-end lg:hidden xl:hidden w-[70%]">
         <button
           ref={menuRef}
           onClick={() => {

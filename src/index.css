@@ -98,11 +98,11 @@ body{
 
 }
 .HeroLeft{
-  animation: HeroLeft 1.3s linear forwards;
+  animation: HeroLeft 1s linear forwards;
   transition: all 4s;
 }
 .HeroRight{
-  animation: HeroRight 1.8s linear forwards;
+  animation: HeroRight 1.5s linear forwards;
   transition: all 4s;
 }
 @keyframes animate_skills {
