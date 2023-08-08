@@ -83,12 +83,12 @@ function Projects({ setOpen, setVideoDemo }) {
           </button>
         ))}
       </div>
-      <section className=" flex justify-center flex-wrap gap-[50px]  overflow-hidden">
+      <section className=" flex justify-center flex-wrap gap-[50px]  py-[30px]">
         {projects.map((item, index) => (
           <div
             data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className="w-[400px] h-[630px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333] shadow-lg shadow-[#111] rounded-md  pb-[20px]  "
+            className="w-[400px] h-[630px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_3px_5px_1px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
           >
             {isLoaded && (
               <div>
@@ -98,7 +98,7 @@ function Projects({ setOpen, setVideoDemo }) {
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     loading="eager"
-                    className="!w-full h-[320px] border-0  !rounded-lg "
+                    className="!w-full h-[320px] border-0  rounded-md "
                     src={"https://www.youtube.com/embed/" + item?.youtubeId}
                   ></iframe>
                 ) : (
