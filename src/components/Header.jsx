@@ -10,8 +10,8 @@ function Header() {
   const [shadow, setshodow] = useState(false);
   const [Active, setActive] = useState("/");
   const menuRef = useRef(null);
-  const location = useLocation()
-  console.log(location.pathname)
+  const location = useLocation();
+  console.log(location.pathname);
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -27,27 +27,30 @@ function Header() {
     }
   };
   return (
-    <header className="pr-10  z-[200] fixed top-0 bg-[#262525] flex justify-between items-center w-full h-[10vh] ">
+    <header className="pr-10  z-[200] fixed top-0 bg-[#262525] flex justify-between items-center w-full sm:h-[7vh] h-[10vh] ">
       <Link
         to="/"
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-      <div data-aos="fade-right" className="">
-          <img src={logo} alt="image" className="w-[200px] h-[100px] " />
-      </div>
-        
+        <div data-aos="fade-right" className="">
+          {/* <img src={logo} alt="image" className="w-[200px] h-[100px] " /> */}
+          <h1 className="text-[--primaryColor]   w-[250px]  logoFont text-center  uppercase text-[30px]">
+            Omar Fathy
+          </h1>
+        </div>
       </Link>
-      <ul data-aos="fade-left" className="hidden lg:flex xl:flex flex-1 justify-end items-center gap-[50px]">
+      <ul
+        data-aos="fade-left"
+        className="hidden lg:flex xl:flex flex-1 justify-end items-center gap-[50px]"
+      >
         {Links.map((item, index) => (
-          <li
-            key={index}
-          >
+          <li key={index}>
             <Link
               className={`image-link relative transition-all hover:text-white text-[#858792] text-[20px] ${
-                ('/' + item) === location.pathname  ? "active" : ""
-              }` }
+                "/" + item === location.pathname ? "active" : ""
+              }`}
               to={"/" + item !== "/" ? item : ""}
             >
               {item !== "" ? item : "Home"}
@@ -86,7 +89,7 @@ function Header() {
             >
               <Link
                 className={`image-link relative transition-all hover:text-white text-[#858792] text-[20px] ${
-                  ('/' + item) === location.pathname  ? "active" : ""
+                  "/" + item === location.pathname ? "active" : ""
                 }`}
                 to={"/" + item !== "/" ? item : ""}
               >

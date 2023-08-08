@@ -6,6 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logoFont{
+  font-family: 'Rubik Wet Paint', cursive;
+}
 input,
 textarea,
 button,
@@ -23,7 +26,7 @@ a {
 :root {
   --primaryBackground: #212222;
   --secondaryBackground: #2f3030;
-  --primaryColor: #e0a80d;
+  --primaryColor: rgba(0, 255, 255, 0.742);
   --greyDark: #7d8792;
   --headingColor: #2d2e2e;
   --white: #fff;

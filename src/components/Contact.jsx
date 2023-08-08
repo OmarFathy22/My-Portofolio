@@ -154,7 +154,7 @@ function Contact() {
             data-aos="flip-down"
             type="submit"
             onClick={handleSubmit(HandleSubmit)}
-            className="sm-md:w-[40%] sm-md:mx-auto sm-md:block w-full lg:w-full text-center bg-[var(--primaryColor)] text-white px-5 py-3 rounded-md mt-[20px] focus-within:outline-none"
+            className="  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] sm-md:w-[40%] sm-md:mx-auto sm-md:block w-full lg:w-full text-center bg-[var(--primaryColor)] text-white px-5 py-3 rounded-md mt-[20px] focus-within:outline-none"
           >
             Send
           </button>

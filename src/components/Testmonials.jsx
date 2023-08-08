@@ -63,7 +63,7 @@ function Testmonials() {
               </p>
               <div className="flex flex-col justify-center items-center gap-[5px]">
                   <a className="border-[none]" target="_blank" rel="noreferrer" href="https://www.youtube.com/@ownoprod/featured">
-                <div data-aos="fade-down" className="border-[3px] border-[var(--primaryColor)] rounded-full p-2 w-[120px] h-[120px]">
+                <div data-aos="fade-down" className="border-[3px]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] border-[var(--primaryColor)] rounded-full p-2 w-[120px] h-[120px]">
                   <img
                     src={Sobhi.image}
                     alt="image"
@@ -91,7 +91,7 @@ function Testmonials() {
                 {item.disc}
               </p>
               <div className="flex flex-col justify-center items-center gap-[5px]">
-                <div data-aos="fade-down" className="border-[3px] border-[var(--primaryColor)] rounded-full p-2 w-[120px] h-[120px]">
+                <div data-aos="fade-down" className="border-[3px] border-[var(--primaryColor)]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] rounded-full p-2 w-[120px] h-[120px]">
                   <img
                     src={item.image}
                     alt="image"
@@ -110,7 +110,7 @@ function Testmonials() {
         </Slider>
       </div>
       <div className="w-full flex flex-col gap-3 justify-center items-center">
-        <Link to={"/Contact"} className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-8 hover:bg-[var(--primaryColor)] transition-all mt-[50px]'>Give Feedback</Link>
+        <Link to={"/Contact"} className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-8 hover:bg-[var(--primaryColor)] transition-all mt-[50px]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]'>Give Feedback</Link>
         <p className="text-white text-center">You are welcome to provide your feedback, and I will include it in this section</p>
       </div>
     </div>

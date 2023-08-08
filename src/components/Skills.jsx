@@ -3,20 +3,17 @@ import { Helmet } from 'react-helmet-async';
 import ReactGA from 'react-ga';
 
 const skills = [
-  { name: "HTML", percentage: "95%" },
-  { name: "CSS", percentage: "92%" },
-  { name: "JAVASCRIPT", percentage: "90%" },
-  { name: "TYPESCRIPT", percentage: "70%" },
-  { name: "C++", percentage: "90%" },
-  { name: "REACT.JS", percentage: "90%" },
-  { name: "NEXT.JS", percentage: "80%" },
-  { name: "TRHEE.JS", percentage: "75%" },
+  { name: "HTML", percentage: "85%" },
+  { name: "CSS", percentage: "80%" },
+  { name: "JAVASCRIPT", percentage: "85%" },
+  { name: "C++", percentage: "80%" },
+  { name: "REACT.JS", percentage: "80%" },
   { name: "TAILWIND CSS", percentage: "85%" },
-  { name: "STYLED-COMPONENTS", percentage: "85%" },
-  { name: "MATERIAL UI", percentage: "95%" },
-  { name: "FIREBASE", percentage: "85%" },
-  { name: "WORDPRESS", percentage: "90%" },
-  { name: "GITHUB", percentage: "85%" },
+  { name: "FIREBASE", percentage: "80%" },
+  { name: "GIT-GITHUB", percentage: "65%" },
+  { name: "NODE JS", percentage: "65%" },
+  { name: "EXPRESS JS", percentage: "65%" },
+  // { name: "MONGO DB", percentage: "65%" },
 ];
 
 
@@ -79,7 +76,7 @@ function AboutMe() {
           return (
             <div
               key={index}
-              className="relative flex  border-[1px] border-[var(--primaryColor)] rounded-full sm:w-[300px] w-[500px] h-5"
+              className="relative flex shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[1px] border-[var(--primaryColor)] rounded-full sm:w-[300px] w-[500px] h-5"
             >
             <div className='absolute w-full'>
                 <h4 className="text-white text-center !w-[100%] absolute top-[-3px]  font-semibold">

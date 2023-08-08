@@ -75,7 +75,7 @@ function Projects({ setOpen, setVideoDemo }) {
               );
             }}
             key={index}
-            className={`text-white border-[1px] sm:text-[13px]  border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${
+            className={`text-white border-[1px] sm:text-[13px]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${
               item === currBtn ? "bg-[var(--primaryColor)]" : ""
             }`}
           >
@@ -103,7 +103,7 @@ function Projects({ setOpen, setVideoDemo }) {
                   ></iframe>
                 ) : (
                   <img
-                    className="!w-full h-[320px] border-0  !rounded-lg "
+                    className="!w-full h-[320px]  border-0  !rounded-lg "
                     src={item.image}
                     alt={item.name}
                   />
@@ -150,7 +150,7 @@ function Projects({ setOpen, setVideoDemo }) {
                     href={item.SourceCode}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-center w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px] "
+                    className=" shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] text-center w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px] "
                   >
                     Source Code
                   </a>
@@ -159,7 +159,7 @@ function Projects({ setOpen, setVideoDemo }) {
                   href={item.LiveDemo}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]"
+                  className="  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]"
                 >
                   View App
                 </a>
