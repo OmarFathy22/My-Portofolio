@@ -2,10 +2,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 const Links = ["", "Skills", "Projects", "Testimonials", "Contact"];
 import logo from "../assets/newLogo.png";
-import { useState } from "react";
+import { useState,useReducer } from "react";
 import { BiMenu } from "react-icons/bi";
 import { useRef, useEffect } from "react";
+ import  ColorContext  from "../context/ColorTheme";
+import { useContext } from "react";
 function Header() {
+  const { theme , changeColor } = useContext(ColorContext);
   const [isOpen, setisOpen] = useState(false);
   const [shadow, setshodow] = useState(false);
   const [Active, setActive] = useState("/");
@@ -30,6 +33,7 @@ function Header() {
   const Nav = () => {
     navigate("/");
   }
+
   return (
     <header className="pr-10  z-[200] fixed top-0 bg-[#262525] flex justify-between items-center w-full sm:h-[7vh] h-[10vh] ">
       <Link
@@ -61,8 +65,11 @@ function Header() {
             </Link>
           </li>
         ))}
+                <input type="color" value={theme} onChange={changeColor}  className =" cursor-pointer mx-1 w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--priamryColor]"/>
+
       </ul>
-      <div data-aos="fade-right" className="flex justify-end lg:hidden xl:hidden w-[70%]">
+      <div data-aos="fade-right" className="flex justify-end item-center lg:hidden xl:hidden w-[70%]">
+        <input type="color" value={theme} onChange={changeColor}  className ="cursor-pointer mt-[7px] mx-1 w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--primaryColor]"/>
         <button
           ref={menuRef}
           onClick={() => {
@@ -71,7 +78,7 @@ function Header() {
               setshodow(!shadow);
             }, 300);
           }}
-          className="text-center cursor-pointer text-[30px]  text-white"
+          className=" text-center cursor-pointer text-[40px]   text-white"
         >
           <BiMenu className="text-center !sm:text-red-500" />
         </button>

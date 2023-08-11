@@ -8,13 +8,15 @@ import HomeTitle from './HomeTitle';
 import ProjectVideo from './Projects/ProjectsVideos'
 import { useState } from 'react';
 import ReactGA from 'react-ga';
-
+import { useContext } from 'react';
+import ColorContext from '../context/ColorTheme';
 function Home() {
+  const {theme} = useContext(ColorContext)
   const [open , setOpen] = useState(false)
   const [VideoDemo , setVideoDemo] = useState('https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FConnectivea.mp4?alt=media&token=3db91fe2-f311-4482-8310-3ff4ed67fbfa&_gl=1*1kajvhq*_ga*MjE0NDEzNDExNy4xNjg0MDMyMTIy*_ga_CW55HF8NVT*MTY4NTczNTU2MC40Mi4xLjE2ODU3MzY4MTcuMC4wLjA.')
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
-    <div className='flex flex-col  '>
+    <div className='flex flex-col text-[theme]'>
         <Hero />
         <Skills/>
         <Projects setOpen={setOpen} setVideoDemo = {setVideoDemo}/>

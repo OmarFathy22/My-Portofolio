@@ -62,7 +62,7 @@ function AboutMe() {
   }, []);
   
   return (
-    <section  data-aos="zoom-in-up" className=" mb-[50px] xxl:mb-0 flex items-center flex-col min-h-[calc(100vh-(13.2vh+100px))]  justify-center px-[10%]  mt-[100px] ">
+    <section  data-aos="zoom-in-up" className=" mb-[50px] xxl:mb-0 flex items-center flex-col   justify-center px-[10%]  mt-[100px] ">
       <Helmet>
         <meta name="Description" content="On this page you will find my skills section" />
         <title>Skills</title>
@@ -79,7 +79,7 @@ function AboutMe() {
               className="relative flex shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[1px] border-[var(--primaryColor)] rounded-full sm:w-[300px] w-[500px] h-5"
             >
             <div className='absolute w-full'>
-                <h4 className="text-white text-center !w-[100%] absolute top-[-3px]  font-semibold">
+                <h4 className="text-white text-center !w-[100%] absolute top-[-3px] pr-3  font-semibold">
                   {item.name}
                 </h4>
             </div>

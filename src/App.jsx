@@ -7,7 +7,8 @@ import Contact from "./components/Contact";
 import Skill from "./components/Skills";
 import NotFound from './components/Error404'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+import ColorContext from "./context/ColorTheme"; 
 
 import {
   createBrowserRouter,
@@ -15,7 +16,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
@@ -34,9 +35,20 @@ const router = createBrowserRouter(
 function App() {
   useEffect(() => {
     AOS.init();
+    AOS.refresh();
+    if(localStorage.getItem("--primaryColor") === null){
+      localStorage.setItem("--primaryColor", JSON.stringify('cyan'));
+    }
+    document.documentElement.style.setProperty(
+      "--primaryColor",
+      JSON.parse(localStorage.getItem("--primaryColor"))
+    );
   } , [])
+  const {theme} = useContext(ColorContext)
   return (
-       <RouterProvider router={router} />
+      <div style={{color:theme}} >
+         <RouterProvider router={router} />
+      </div>
   );
 }
 

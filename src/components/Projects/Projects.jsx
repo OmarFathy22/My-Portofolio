@@ -40,7 +40,7 @@ function Projects({ setOpen, setVideoDemo }) {
   ReactGA.pageview(window.location.pathname + window.location.search);
   console.log(open);
   return (
-    <div className="min-h-[100vh]gap-[30px] !overflow-x-hidden flex items-center flex-col  justify-center px-[10%] mt-[100px]">
+    <div className=" gap-[30px]  flex items-center flex-col  justify-center px-[10%] mt-[100px] no-scrollbar">
       <Helmet>
         <meta
           name="Description"

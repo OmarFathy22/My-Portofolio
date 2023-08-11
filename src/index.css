@@ -1,6 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -9,6 +25,7 @@
 .logoFont{
   font-family: 'Rubik Wet Paint', cursive;
 }
+
 input,
 textarea,
 button,
@@ -26,7 +43,8 @@ a {
 :root {
   --primaryBackground: #212222;
   --secondaryBackground: #2f3030;
-  --primaryColor: rgba(0, 255, 255, 0.742);
+  /* --primaryColor: rgba(0, 255, 255, 0.742);
+  --primaryColor: localStorage.getItem("color") || yellow; */
   --greyDark: #7d8792;
   --headingColor: #2d2e2e;
   --white: #fff;
@@ -70,8 +88,11 @@ body{
     width: 120px;
     height: 60px;
     background-image: url(./assets/menu-hover-shape.webp);
+    filter: hue-rotate(0deg); /* Set hue rotation to 0 degrees (red) */
+    
     /* visibility: hidden; */
     opacity: 0;
+    color: red;
     transition: all .5s eas
 }
 /* .image-link:hover::after{
@@ -80,7 +101,7 @@ body{
 } */
 
 .active{
-  color: white !important;
+  color: var(--primaryColor) !important;
 }
 .active.image-link::after{
   opacity: 1;
