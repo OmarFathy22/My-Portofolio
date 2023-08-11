@@ -37,7 +37,7 @@ function App() {
     AOS.init();
     AOS.refresh();
     if(localStorage.getItem("--primaryColor") === null){
-      localStorage.setItem("--primaryColor", JSON.stringify('cyan'));
+      localStorage.setItem("--primaryColor", JSON.stringify('#69B6DD'));
     }
     document.documentElement.style.setProperty(
       "--primaryColor",
