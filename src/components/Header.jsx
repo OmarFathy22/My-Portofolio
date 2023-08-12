@@ -4,10 +4,10 @@ const Links = ["", "Skills", "Projects", "Testimonials", "Contact"];
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { useRef, useEffect } from "react";
- import  ColorContext  from "../context/ColorTheme";
+import ColorContext from "../context/ColorTheme";
 import { useContext } from "react";
 function Header() {
-  const { theme , changeColor } = useContext(ColorContext);
+  const { theme, changeColor } = useContext(ColorContext);
   const [isOpen, setisOpen] = useState(false);
   const [shadow, setshodow] = useState(false);
   const [setActive] = useState("/");
@@ -31,7 +31,7 @@ function Header() {
   const navigate = useNavigate();
   const Nav = () => {
     navigate("/");
-  }
+  };
 
   return (
     <header className="pl-7 pr-6 z-[200] fixed top-0 bg-[#262525] flex justify-between items-center w-full sm:h-[7vh] h-[10vh] ">
@@ -43,7 +43,10 @@ function Header() {
       >
         <div data-aos="fade-left" className="">
           {/* <img src={logo} alt="image" className="w-[200px] h-[100px] " /> */}
-          <h1 onClick={Nav} className="cursor-pointer text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  logoFont   uppercase text-[30px]">
+          <h1
+            onClick={Nav}
+            className="cursor-pointer text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  logoFont   uppercase text-[30px]"
+          >
             Omar Fathy
           </h1>
         </div>
@@ -64,11 +67,23 @@ function Header() {
             </Link>
           </li>
         ))}
-        <input type="color" value={theme} onChange={changeColor}  className =" cursor-pointer  w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--priamryColor]"/>
-
+        <input
+          type="color"
+          value={theme}
+          onChange={changeColor}
+          className=" cursor-pointer  w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--priamryColor]"
+        />
       </ul>
-      <div data-aos="fade-right" className="flex justify-end item-center lg:hidden xl:hidden w-[70%] ">
-        <input type="color" value={theme} onChange={changeColor}  className ="cursor-pointer mt-[7px] sm:mr-1  w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--primaryColor]"/>
+      <div
+        data-aos="fade-right"
+        className="flex justify-end item-center lg:hidden xl:hidden w-[70%] "
+      >
+        <input
+          type="color"
+          value={theme}
+          onChange={changeColor}
+          className="cursor-pointer mt-[7px] sm:mr-1  w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--primaryColor]"
+        />
         <button
           ref={menuRef}
           onClick={() => {

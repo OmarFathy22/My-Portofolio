@@ -92,7 +92,7 @@ body {
   left: 50%;
   width: 120px;
   height: 60px;
-  background-image: url(./assets/menu-hover-shape.webp);
+  background-image: url("https://res.cloudinary.com/dqhdokahr/image/upload/v1691835173/my-portfolio/menu-hover-shape_jinjqq.webp");
   filter: hue-rotate(0deg);
   /* Set hue rotation to 0 degrees (red) */
 
@@ -115,15 +115,7 @@ body {
   opacity: 1;
 }
 
-.slick-list {
-  height: 410px;
-}
 
-@media screen and (max-width: 768px) {
-  .slick-list {
-    height: 500px;
-  }
-}
 
 .skills {
   animation: animate_skills 1s linear forwards;

@@ -1,4 +1,3 @@
-import logo from "../assets/remove_bg.png";
 import my_cv from "../assets/Resume.pdf";
 import Typewriter from "typewriter-effect";
 import { Helmet } from "react-helmet-async";
@@ -22,7 +21,7 @@ function Hero() {
       </Helmet>
       <div className="HeroLeft  h-[620px] w-full mt-[35px] flex flex-1 justify-end max-1200:justify-center max-1200:mb-[30px] items-center">
         <img
-          src={logo}
+          src={"https://res.cloudinary.com/dqhdokahr/image/upload/v1691835175/my-portfolio/remove_bg_yvxr7q.png"}
           alt=""
           className="AnimatedHero w-[500px] h-[500px] sm:w-[350px] sm:h-[350px] pt-2    
           border-[1px] border-[--primaryColor] rounded-full  object-contain  sticky top-0 right-0 left-0 bottom-0
