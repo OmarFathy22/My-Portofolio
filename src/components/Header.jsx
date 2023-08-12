@@ -44,7 +44,7 @@ function Header() {
       >
         <div data-aos="fade-left" className="">
           {/* <img src={logo} alt="image" className="w-[200px] h-[100px] " /> */}
-          <h1 onClick={Nav} className="text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  logoFont text-center  uppercase text-[30px]">
+          <h1 onClick={Nav} className="cursor-pointer text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  logoFont text-center  uppercase text-[30px]">
             Omar Fathy
           </h1>
         </div>

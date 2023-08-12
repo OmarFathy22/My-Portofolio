@@ -45,13 +45,14 @@ function Hero() {
               }}
             />
           </h1>
-          <p className="text-white text-center">
-            Motivated junior front-end developer looking for a role as
-            full-stack web developer. Passionate about building elegant and
-            functional websites that provide seamless user experiences. Enjoy
-            solving complex problems and building custom solutions that meet the
-            unique needs of my clients. Outside of work, I enjoy spending time
-            at the gym, socializing, and watching TV Series.
+          <p className="text-white text-center sm:px-3">
+            Motivated junior front-end developer looking for a role as 
+            full-stack web developer. Passionate about building elegant
+            and functional websites that provide seamless user experiences.
+            Enjoy solving complex problems and building custom solutions
+            that meet the unique needs of my clients. Outside of work,
+            I enjoy spending time at the gym, socializing
+             and watching TV Series.
           </p>
           <a
             href={my_cv}

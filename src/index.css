@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 .logoFont{
   font-family: 'Rubik Wet Paint', cursive;
@@ -43,8 +44,6 @@ a {
 :root {
   --primaryBackground: #212222;
   --secondaryBackground: #2f3030;
-  /* --primaryColor: rgba(0, 255, 255, 0.742);
-  --primaryColor: localStorage.getItem("color") || yellow; */
   --greyDark: #7d8792;
   --headingColor: #2d2e2e;
   --white: #fff;
@@ -56,7 +55,7 @@ body{
 }
 ::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
 	border-radius: 10px;
 	background-color: var(--primaryBackground);
 }
@@ -71,7 +70,7 @@ body{
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: var(--white);
+	background-color: var(--primaryColor);
 }
 #root{
   overflow-x: hidden;

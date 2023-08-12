@@ -1,5 +1,5 @@
 import { buttons } from "./ProjectsData";
-import { ALL, VANILLA_JS, REACT, NEXT } from "./ProjectsData";
+import { ALL, VANILLA_JS, REACT, MERN } from "./ProjectsData";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 // import { AiFillStar } from "react-icons/ai";
@@ -71,11 +71,11 @@ function Projects({ setOpen, setVideoDemo }) {
                   ? VANILLA_JS
                   : item === "REACT"
                   ? REACT
-                  : NEXT
+                  : MERN
               );
             }}
             key={index}
-            className={`text-white border-[1px] sm:text-[13px]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${
+            className={`text-white border-[1px] sm:text-[10px] font-bold  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[var(--primaryColor)] rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:bg-[var(--primaryColor)] transition-all  ${
               item === currBtn ? "bg-[var(--primaryColor)]" : ""
             }`}
           >
@@ -88,7 +88,7 @@ function Projects({ setOpen, setVideoDemo }) {
           <div
             data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className="w-[400px] h-[630px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_3px_5px_1px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
+            className="w-[400px] h-[630px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_0px_5px_3px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
           >
             {isLoaded && (
               <div>

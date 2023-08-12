@@ -1,12 +1,9 @@
-export const buttons = ["ALL", "VANILLA JS", "REACT"];
+export const buttons = ["ALL", "VANILLA JS", "REACT", "MERN STACK"];
 export const ALL = [
   {
     name: "Kizerr",
     description: "Fiverr clone built with MERN stack and Tailwind CSS",
-    stack: [
-      "MERN STACK",
-      "Tailwind CSS",
-    ],
+    stack: ["MERN STACK", "Tailwind CSS"],
     SourceCode: "https://github.com/OmarFathy22/Kizerr-project",
     LiveDemo: "https://kizerr.pages.dev",
     video:
@@ -26,7 +23,7 @@ export const ALL = [
   {
     name: "TASKATI",
     description: "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
-    stack: ["Fontawesome", "Firebase", "React", "CSS"],
+    stack: ["React", "Firebase", "CSS"],
     SourceCode: "https://github.com/OmarFathy22/TAKATI",
     LiveDemo: "https://taskati.pages.dev/",
     video:
@@ -99,10 +96,7 @@ export const REACT = [
   {
     name: "Kizerr",
     description: "Fiverr clone built with MERN stack and Tailwind CSS",
-    stack: [
-      "MERN STACK",
-      "Tailwind CSS",
-    ],
+    stack: ["MERN STACK", "Tailwind CSS"],
     SourceCode: "https://github.com/OmarFathy22/Kizerr-project",
     LiveDemo: "https://kizerr.pages.dev",
     video:
@@ -112,7 +106,7 @@ export const REACT = [
   {
     name: "TASKATI",
     description: "REACT APP FOR EASY TASKS ORGANIZATION AND TRACING",
-    stack: ["Fontawesome", "Firebase", "React", "CSS"],
+    stack: ["React", "Firebase", "CSS"],
     SourceCode: "https://picsum.photos/200/300",
     LiveDemo: "https://taskati.pages.dev/",
     video:
@@ -150,12 +144,15 @@ export const REACT = [
     youtubeId: "RjkK7wwZT-k",
   },
 ];
-export const NEXT = [
+export const MERN = [
   {
-    name: "Gym Exercises App",
-    description: "WORKOUT APP BUILT WITH REACT TO SHOWCASE THE BEST EXERCISES",
-    stack: ["Tailwind CSS", "Firebase", "Next.js", "API"],
-    SourceCode: "https://github.com/OmarFathy22/my-dream-gym",
-    LiveDemo: "https://way-to-forma.vercel.app/",
+    name: "Kizerr",
+    description: "Fiverr clone built with MERN stack and Tailwind CSS",
+    stack: ["MERN STACK", "Tailwind CSS"],
+    SourceCode: "https://github.com/OmarFathy22/Kizerr-project",
+    LiveDemo: "https://kizerr.pages.dev",
+    video:
+      "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FConnectivea.mp4?alt=media&token=3db91fe2-f311-4482-8310-3ff4ed67fbfa&_gl=1*1kajvhq*_ga*MjE0NDEzNDExNy4xNjg0MDMyMTIy*_ga_CW55HF8NVT*MTY4NTczNTU2MC40Mi4xLjE2ODU3MzY4MTcuMC4wLjA",
+    youtubeId: "X9VEFsVZrmk",
   },
 ];

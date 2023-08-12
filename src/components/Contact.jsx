@@ -41,7 +41,7 @@ function Contact() {
 
   return (
     <div
-      className="jlg:mx-auto flex flex-1 items-center flex-col  justify-center px-[10%] mt-[100px]"
+      className="min-h-[80vh] lg:mx-auto flex flex-1 items-center flex-col  justify-center px-[10%] mt-[100px]"
       id="#Contact"
     >
       <Helmet>
@@ -70,7 +70,7 @@ function Contact() {
                 {...register("name", {
                   required: { value: true, message: "Name is Required" },
                   pattern: {
-                    value: /^[A-Za-z]+$/i,
+                    value: /^[A-Za-z\s]+$/i,
                     message: "Please enter a valid name",
                   },
                   minLength: {

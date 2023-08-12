@@ -5,7 +5,6 @@ const initialData = {
   theme: JSON.parse(localStorage.getItem("--primaryColor")) || "#69B6DD",
 };
 
-//,
 
 const reducer = (state, action) => {
   switch (action.type) {
