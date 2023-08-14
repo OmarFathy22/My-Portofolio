@@ -46,10 +46,10 @@ const Feedback = () => {
   return (
 
     <div className="mt-[15vh]">
-        <h1 className="text-white w-full text-center sm:text-[17px] text-[30px]">
+        <h1 className="text-white w-full text-center sm:text-[20px] text-[30px]">
           Give me your <span className="text-[var(--primaryColor)]">impression</span>
         </h1>
-      <div className="min-h-[80vh]  text-white flex items-center justify-center">
+      <div className="min-h-[80vh]   text-white flex items-center justify-center">
             <Helmet>
           <meta name="Description" content="On this page You will find what people say about me and my work" />
           <title>Impression</title>
@@ -110,16 +110,16 @@ const Feedback = () => {
             accept="image/*"
           />
           <div data-aos="flip-up" className="flex">
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full ">
             <label className="mb-1"> picture (optional)</label>
-            <div className="flex ">
+            <div className="flex flex-col  ">
               <label 
                 htmlFor="MyInputFile"
-                className="mb-1 cursor-pointer text-[--primaryColor] bg-white w-fit p-3 rounded-md"
+                className="mb-1 cursor-pointer text-center text-[--primaryColor] bg-white w-full p-3 rounded-md"
               >
                 Choose file
               </label>
-            <h1 className="text-white ml-3 truncate translate-y-[10px]">
+            <h1 className="text-white  truncate ">
               {imageName}
             </h1>
             </div>
@@ -129,7 +129,7 @@ const Feedback = () => {
           // data-aos="flip-down"
             disabled = {loading}
             type="submit"
-            className="p-3 rounded-md bg-[--primaryColor]  mx-auto w-[100px] "
+            className="p-3 rounded-md bg-[--primaryColor]  mx-auto w-[100px] h-fit  "
           >
           {loading ?   <svg
               aria-hidden="true"
