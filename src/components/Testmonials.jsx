@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Helmet } from 'react-helmet-async';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ReactGA from 'react-ga';
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection } from "firebase/firestore";
@@ -44,11 +44,12 @@ function Testmonials() {
   <h1>Error...</h1>
 </div>
   const testimonials = value?.docs?.map((doc) => doc?.data());
+  const {pathname} = useLocation();
   return (
     <div  className="my-[100px]">
       <Helmet>
         <meta name="Description" content="On this page You will find what people say about me and my work" />
-        <title>Testimonials</title>
+        <title>{pathname === "/"?"Home": "Testmonials"}</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
       <h1 data-aos="zoom-out" className='text-[50px] font-bold text-[var(--primaryColor)] text-center mb-[100px]'> Testimonials </h1>

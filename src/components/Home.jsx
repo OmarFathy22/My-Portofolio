@@ -10,6 +10,8 @@ import { useState } from 'react';
 import ReactGA from 'react-ga';
 import { useContext } from 'react';
 import ColorContext from '../context/ColorTheme';
+import { Helmet } from 'react-helmet-async';
+
 function Home() {
   const {theme} = useContext(ColorContext)
   const [open , setOpen] = useState(false)
@@ -17,6 +19,11 @@ function Home() {
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className='flex flex-col text-[theme]'>
+          <Helmet>
+        <meta name="Description" content="On this page You will find what people say about me and my work" />
+        <title>Home</title>
+        <link rel="canonical" href="https://omarfathy.pages.dev" />
+    </Helmet>
         <Hero />
         <Skills/>
         <Projects setOpen={setOpen} setVideoDemo = {setVideoDemo}/>

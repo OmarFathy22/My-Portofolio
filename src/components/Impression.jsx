@@ -4,6 +4,8 @@ import uploadImage from "../utils/Upload";
 import { generateUniqueId } from "../utils/Upload";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+
 const Feedback = () => {
   const [image, setImage] = useState(null);
   const [imageName, setImageName] = useState("");
@@ -42,7 +44,13 @@ const Feedback = () => {
     navigate("/Testimonials");
   };
   return (
+
     <div className="min-h-[80vh] mt-[10vh] text-white flex items-center justify-center">
+          <Helmet>
+        <meta name="Description" content="On this page You will find what people say about me and my work" />
+        <title>Impression</title>
+        <link rel="canonical" href="https://omarfathy.pages.dev" />
+    </Helmet>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-10 sm:w-[80%] w-[50%]"
