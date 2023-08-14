@@ -69,7 +69,7 @@ const Feedback = () => {
             onChange={handleChange}
             type="text"
             name="name"
-            className="p-3 rounded-md outline-none !text-[--primaryColor]  "
+            className="p-3 rounded-md outline-none text-[--black]  "
             placeholder="name"
           />
           </div>
@@ -82,7 +82,7 @@ const Feedback = () => {
             onChange={handleChange}
             type="text"
             name="title"
-            className="p-3 rounded-md outline-none text-[--primaryColor]  "
+            className="p-3 rounded-md outline-none text-[--black]  "
             placeholder="title"
           />
           </div>
@@ -95,7 +95,7 @@ const Feedback = () => {
             onChange={handleChange}
             name="desc"
             placeholder="What do you think about Me?"
-            className="p-3 rounded-md outline-none text-[--primaryColor]  "
+            className="p-3 rounded-md outline-none text-[--black]  "
           />
           </div>
           <input

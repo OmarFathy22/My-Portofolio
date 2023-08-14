@@ -63,7 +63,7 @@ function Contact() {
       flex sm-md:flex-col sm-md:justify-center sm-md:items-center gap-[100px] sm-md:gap-[20px]  mx-[20px] 
       "
       >
-        <form ref={form} onSubmit={handleSubmit(HandleSubmit)}>
+        <form className="text-black" ref={form} onSubmit={handleSubmit(HandleSubmit)}>
           <div className="flex sm-md:flex-col sm-md:gap-[20px]  w-full">
             <div data-aos="flip-left" className="flex flex-col flex-1">
               <input

@@ -86,7 +86,7 @@ function Testmonials() {
         </Slider>
       </div>
       <div className="w-full flex flex-col gap-3 justify-center items-center">
-        <Link to={"/Impression"} className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-8 hover:bg-[var(--primaryColor)] transition-all mt-[50px]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]'>Give Impression</Link>
+        <Link to={"/Impression"} className='text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-8 hover:bg-[var(--primaryColor)] transition-all mt-[50px] text-[15px]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]'>Give Impression</Link>
         <p className="text-white text-center">You are welcome to provide your Impression about me, and I will include it in this section</p>
       </div>
     </div>
