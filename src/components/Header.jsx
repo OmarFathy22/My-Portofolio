@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-const Links = ["", "Skills", "Projects", "Testimonials", "Contact"];
+const Links = ["", "Skills", "Projects", "Testimonials", "Contact" , "Impression"];
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { useRef, useEffect } from "react";
