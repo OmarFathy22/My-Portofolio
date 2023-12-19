@@ -173,7 +173,7 @@ function Contact() {
             <FaMobileAlt />
           </h1>
           <h3 data-aos="fade-down" className="text-[var(--silver)] text-[20px]">
-            +20 1064547214
+            +20 1271527590
           </h3>
           <h1 data-aos="fade-up" className="text-white text-[25px]">
             <HiOutlineMail />
