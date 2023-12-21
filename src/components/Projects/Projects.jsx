@@ -108,6 +108,7 @@ function Projects({ setOpen, setVideoDemo }) {
                     alt={item.name}
                   />
                 )}
+              
               </div>
             )}
             <div className="mx-[10px] flex flex-col gap-[10px] items-center">

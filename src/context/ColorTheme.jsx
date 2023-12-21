@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-const ColorContext = createContext();
+const ColorContext = createContext(null);
 
 const initialData = {
   theme: JSON.parse(localStorage.getItem("--primaryColor")) || "#69B6DD",
