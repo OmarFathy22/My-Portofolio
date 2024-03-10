@@ -1,5 +1,16 @@
-export const buttons = ["ALL", "VANILLA JS", "REACT", "MERN STACK"];
+export const buttons = ["ALL", "REACT NATIVE", "REACT", "MERN STACK"];
 export const ALL = [
+  {
+    name: "EntertainX",
+    description:
+      "EntertainX is a modern entertainment booking system and an active community platform",
+    stack: ["React Native"],
+    SourceCode: "https://github.com/OmarFathy22/Entertainx",
+    LiveDemo: "https://www.youtube.com/watch?v=ai6zPEj9eh4&ab_channel=OmarFathy",
+    video:
+      "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
+    youtubeId: "ai6zPEj9eh4",
+  },
   {
     name: "Kizerr",
     description: "Fiverr clone built with MERN stack and Tailwind CSS",
@@ -51,26 +62,26 @@ export const ALL = [
     youtubeId: "RjkK7wwZT-k",
   },
   {
-    name: "Memory Card Game",
-    description:
-      "  SIMPLE COOL GAME FOR TESTING YOUR MEMORY MEMORY CARD GAME  SKILLS AND TO HAVE SOME FUN",
-    stack: ["HTML", "CSS", "JS"],
-    SourceCode: "https://github.com/OmarFathy22/Memory_card_GameV2",
-    LiveDemo: "https://omarfathy22.github.io/Memory_Card_Game/",
-    video:
-      "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
-    youtubeId: "k3K7-hI0tTk",
-  },
-  {
     name: "Flicker",
     description: "ELEGANT LANDING PAGE WITH SOME COOL ANIMATIONS",
     stack: ["Tailwind CSS", "React" ],
     SourceCode: "https://github.com/OmarFathy22/lxdyi",
     LiveDemo: "https://lxdyi.pages.dev/",
     video:
-      "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2Fway%20to%20forma.mp4?alt=media&token=580317a5-a2e4-4a2a-9ea1-994136724489",
+    "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2Fway%20to%20forma.mp4?alt=media&token=580317a5-a2e4-4a2a-9ea1-994136724489",
     youtubeId: "19lIo_xtvdA",
   },
+  // {
+  //   name: "Memory Card Game",
+  //   description:
+  //     "  SIMPLE COOL GAME FOR TESTING YOUR MEMORY MEMORY CARD GAME  SKILLS AND TO HAVE SOME FUN",
+  //   stack: ["HTML", "CSS", "JS"],
+  //   SourceCode: "https://github.com/OmarFathy22/Memory_card_GameV2",
+  //   LiveDemo: "https://omarfathy22.github.io/Memory_Card_Game/",
+  //   video:
+  //     "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
+  //   youtubeId: "k3K7-hI0tTk",
+  // },
   // {
   //   image: bootcamp,
   //   name: 'JS Bootcamp',
@@ -81,26 +92,18 @@ export const ALL = [
 
   // },
 ];
-export const VANILLA_JS = [
+export const REACT_NATIVE = [
   {
-    name: "Memory Card Game",
+    name: "EntertainX",
     description:
-      "SIMPLE COOL GAME FOR TESTING YOUR MEMORY SKILLS AND TO HAVE SOME FUN",
-    stack: ["HTML", "CSS", "JS"],
-    SourceCode: "https://github.com/OmarFathy22/Memory_Card_Game",
-    LiveDemo: "https://omarfathy22.github.io/Memory_Card_Game/",
+      "EntertainX is a modern entertainment booking system and an active community platform",
+    stack: ["React Native"],
+    SourceCode: "https://github.com/OmarFathy22/Entertainx",
+    LiveDemo: "https://www.youtube.com/watch?v=ai6zPEj9eh4&ab_channel=OmarFathy",
     video:
       "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
-    youtubeId: "k3K7-hI0tTk",
+    youtubeId: "ai6zPEj9eh4",
   },
-  // {
-  //   image: bootcamp,
-  //   name: 'JS Bootcamp',
-  //   description: 'SIMPLE APP FOR PRACTICING HTML - CSS - JAVASCRIPT WITH PRACTICAL EXAMPLES',
-  //   stack: ['HTML', 'CSS', 'JS'],
-  //   SourceCode: 'https://github.com/OmarFathy22/Memory_Card_Game',
-  //   LiveDemo: 'https://project-afc16.web.app/',
-  // },
 ];
 export const REACT = [
   {

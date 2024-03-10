@@ -1,5 +1,5 @@
 import { buttons } from "./ProjectsData";
-import { ALL, VANILLA_JS, REACT, MERN } from "./ProjectsData";
+import { ALL,REACT_NATIVE, REACT, MERN } from "./ProjectsData";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 // import { AiFillStar } from "react-icons/ai";
@@ -67,8 +67,8 @@ function Projects({ setOpen, setVideoDemo }) {
               setProjects(
                 item === "ALL"
                   ? ALL
-                  : item === "VANILLA JS"
-                  ? VANILLA_JS
+                  : item === "REACT NATIVE"
+                  ? REACT_NATIVE
                   : item === "REACT"
                   ? REACT
                   : MERN
