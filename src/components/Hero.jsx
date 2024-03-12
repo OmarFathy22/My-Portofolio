@@ -23,7 +23,7 @@ function Hero() {
         <img
           src={"https://res.cloudinary.com/dqhdokahr/image/upload/v1691835175/my-portfolio/remove_bg_yvxr7q.png"}
           alt=""
-          className="AnimatedHero w-[500px] h-[500px] sm:w-[350px] sm:h-[350px] pt-2    
+          className="AnimatedHero w-[500px] h-[500px] sm:w-[300px] sm:h-[300px] pt-2    
           border-[1px] border-[--primaryColor] rounded-full  object-contain  sticky top-0 right-0 left-0 bottom-0
           shadow-[0px_-10px_20px_1px_#e2e8f0] shadow-[--primaryColor]  transition-all duration-500 ease-in-out
           
@@ -35,7 +35,7 @@ function Hero() {
           <h1 className="text-white text-[20px] font-semibold">
             Hello I&apos;M
           </h1>
-          <h1 className="text-[var(--primaryColor)] sm-md:text-[30px] lg:text-[50px] text-[70px]">
+          <h1 className="text-[var(--primaryColor)] text-center sm:!text-[25px] sm-md:text-[30px] lg:text-[50px] text-[70px]">
             <Typewriter
               options={{
                 strings: ["OMAR FATHY", "FULL STACK DEVELOPER"],
@@ -44,7 +44,7 @@ function Hero() {
               }}
             />
           </h1>
-          <p className="text-white text-center sm:px-3">
+          <p className="text-white text-center sm:!text-[15px] sm:px-3">
             Motivated Junior Full-Stack Web Developer. Passionate about building
             elegant and functional websites that provide seamless user
             experiences. Enjoy solving complex problems and building custom

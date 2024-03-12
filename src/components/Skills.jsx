@@ -6,13 +6,15 @@ const skills = [
   { name: "HTML", percentage: "85%" },
   { name: "CSS", percentage: "80%" },
   { name: "JAVASCRIPT", percentage: "85%" },
-  { name: "C++", percentage: "80%" },
+  { name: "C++", percentage: "85%" },
   { name: "REACT.JS", percentage: "80%" },
+  { name: "REACT NATIVE", percentage: "80%" },
+  { name: "NEXT.JS", percentage: "70%" },
   { name: "TAILWIND CSS", percentage: "85%" },
   { name: "FIREBASE", percentage: "80%" },
   { name: "GIT-GITHUB", percentage: "65%" },
-  { name: "NODE JS", percentage: "65%" },
-  { name: "EXPRESS JS", percentage: "65%" },
+  { name: "NODE JS", percentage: "70%" },
+  { name: "EXPRESS JS", percentage: "70%" },
   // { name: "MONGO DB", percentage: "65%" },
 ];
 
@@ -76,10 +78,10 @@ function AboutMe() {
           return (
             <div
               key={index}
-              className="relative flex shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[1px] border-[var(--primaryColor)] rounded-full sm:w-[300px] w-[500px] h-5"
+              className="relative flex shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[1px] border-[var(--primaryColor)] rounded-full w-full h-10"
             >
-            <div className='absolute w-full'>
-                <h4 className="text-white text-center !w-[100%] absolute top-[-3px] pr-3  font-semibold">
+            <div className='absolute w-full flex h-full '>
+                <h4 className="text-white text-center !w-[100%] flex items-center justify-center  !h-full  font-semibold">
                   {item.name}
                 </h4>
             </div>

@@ -83,12 +83,12 @@ function Projects({ setOpen, setVideoDemo }) {
           </button>
         ))}
       </div>
-      <section className=" flex justify-center flex-wrap gap-[50px]  py-[30px]">
+      <section className=" grid grid-cols-3 max-1300:grid-cols-2 sm-md:!grid-cols-1 gap-[50px]  py-[30px]">
         {projects.map((item, index) => (
           <div
             data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className="w-[400px] h-[630px] sm:w-[350px] flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_0px_5px_3px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
+            className=" h-[630px] sm:w-full flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_0px_5px_3px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
           >
             {isLoaded && (
               <div>

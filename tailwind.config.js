@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     screens: {
+      'xs': { 'min': '0px', 'max': '370px' },
       'sm': { 'min': '0px', 'max': '600px' },
       'md': { 'min': '600px', 'max': '1024px' },
       'sm-md': { 'min': '0px', 'max': '1024px' },
