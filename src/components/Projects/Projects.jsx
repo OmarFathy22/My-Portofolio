@@ -88,7 +88,7 @@ function Projects({ setOpen, setVideoDemo }) {
           <div
             data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
             key={index}
-            className=" h-[630px] sm:w-full flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_0px_5px_3px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
+            className=" h-[630px] sm:h-fit sm:w-full flex flex-col gap-[10px] bg-[#333] border-[1px] border-[#333]   shadow-[0px_0px_5px_3px_#e2e8f0] shadow-[--primaryColor] rounded-md  pb-[20px]  "
           >
             {isLoaded && (
               <div>
@@ -145,8 +145,8 @@ function Projects({ setOpen, setVideoDemo }) {
                   </h3>
                 ))}
               </div>
-              <div className="w-full flex justify-around gap-3">
-                {item.name !== "JS Bootcamp" && (
+              <div className="w-full flex justify-around gap-3   ">
+                
                   <a
                     href={item.SourceCode}
                     target="_blank"
@@ -155,12 +155,12 @@ function Projects({ setOpen, setVideoDemo }) {
                   >
                     Source Code
                   </a>
-                )}
+                
                 <a
                   href={item.LiveDemo}
                   target="_blank"
                   rel="noreferrer"
-                  className="  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] text-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]"
+                  className="  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] text-center flex items-center justify-center  w-[130px] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-1  hover:bg-[var(--primaryColor)] transition-all mt-[20px]"
                 >
                   View App
                 </a>
