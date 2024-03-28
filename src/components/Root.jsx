@@ -10,6 +10,7 @@ function Home() {
   return (
     <div className='flex flex-col gap-[100px] relative text-[Color]'>
       <ScrollToTop />
+    
       <Header />
        <div>
         <Outlet/>

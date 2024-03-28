@@ -29,7 +29,7 @@ const Animation = [
   "zoom-out-left",
   "zoom-out-right",
 ];
-function Projects({ setOpen, setVideoDemo }) {
+function Projects() {
   const [projects, setProjects] = useState(ALL);
   const [currBtn, setcurrBtn] = useState("ALL");
   const [isLoaded, setIsLoaded] = useState(false);
