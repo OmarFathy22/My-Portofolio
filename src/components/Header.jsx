@@ -36,9 +36,9 @@ function Header() {
   };
 
   return (
-    <div className=" h-[13vh] z-[200] fixed top-0 w-full bg-black ">
-      <h1 className=" text-[20px] sm:text-[12px] text-center py-3 flex items-center justify-center font-bold text-white pulsate-bck"> <span className="text-[orange] mr-2"><IoWarningOutline/> </span> My GitHub account has been temporarily flagged</h1>
-      <header className="pl-7 pr-6 h-full  bg-[#262525] flex justify-between items-center w-full sm:h-[7vh]">
+    <div className=" h-[10vh] z-[200] fixed top-0 w-full bg-black ">
+      {/* <h1 className=" text-[20px] sm:text-[12px] text-center py-3 flex items-center justify-center font-bold text-white pulsate-bck"> <span className="text-[orange] mr-2"><IoWarningOutline/> </span> My GitHub account has been temporarily flagged</h1> */}
+      <header className="pl-7 pr-6 h-full  bg-[#262525] flex justify-between items-center w-full">
         <Link
           to="/"
           onClick={() => {
