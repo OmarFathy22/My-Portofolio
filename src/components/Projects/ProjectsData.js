@@ -17,7 +17,7 @@ export const ALL = [
       "Spotify Clone is a modern music streaming platform and an active community platform",
     stack: ["Next.js", "Tailwind CSS" , "Supabase"],
     SourceCode: "https://github.com/OmarFathy22/spotify-clone",
-    LiveDemo: "spotify-clone-weld-tau.vercel.app",
+    LiveDemo: "https://spotify-clone-weld-tau.vercel.app",
     video:
       "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
     youtubeId: "",
@@ -123,7 +123,7 @@ export const REACT = [
       "Spotify Clone is a modern music streaming platform and an active community platform",
     stack: ["Next.js", "Tailwind CSS" , "Supabase"],
     SourceCode: "https://github.com/OmarFathy22/spotify-clone",
-    LiveDemo: "spotify-clone-weld-tau.vercel.app",
+    LiveDemo: "https://spotify-clone-weld-tau.vercel.app",
     video:
       "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
     youtubeId: "",
