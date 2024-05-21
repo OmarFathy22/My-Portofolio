@@ -1,4 +1,4 @@
-import my_cv from "../assets/Resume.pdf";
+import my_cv from "../assets/OmarFathyMohamed.pdf";
 import Typewriter from "typewriter-effect";
 import { Helmet } from "react-helmet-async";
 import { FaGithubSquare } from "react-icons/fa";
