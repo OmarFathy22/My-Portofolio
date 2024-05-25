@@ -48,7 +48,7 @@ function Header() {
             {/* <img src={logo} alt="image" className="w-[200px] h-[100px] " /> */}
             <h1
               onClick={Nav}
-              className="cursor-pointer text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  font-bold    uppercase text-[30px]"
+              className="cursor-pointer gradient-text sm:text-[20px] sm:w-[200px]    w-[250px]  font-bold    uppercase text-[30px]"
             >
               Omar Fathy
             </h1>
@@ -62,7 +62,7 @@ function Header() {
             <li key={index}>
               <Link
                 className={` font-extrabold image-link relative transition-all hover:text-white text-[#cdced1] text-[20px] ${
-                  "/" + item === location.pathname ? "active" : ""
+                  "/" + item === location.pathname ? "gradient-text" : ""
                 }`}
                 to={"/" + item !== "/" ? item : ""}
               >
@@ -95,7 +95,7 @@ function Header() {
                 setshodow(!shadow);
               }, 300);
             }}
-            className="  cursor-pointer text-[40px]   text-[--primaryColor]"
+            className="  cursor-pointer text-[40px]   text-orange-500"
           >
             <BiMenu className="text-center" />
           </button>
@@ -117,7 +117,7 @@ function Header() {
               >
                 <Link
                   className={`font-bold image-link relative transition-all hover:text-white text-[#c4c1c1] text-[20px] ${
-                    "/" + item === location.pathname ? "active" : ""
+                    "/" + item === location.pathname ? "gradient-text" : ""
                   }`}
                   to={"/" + item !== "/" ? item : ""}
                 >

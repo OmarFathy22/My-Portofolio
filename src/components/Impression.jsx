@@ -47,7 +47,7 @@ const Feedback = () => {
 
     <div className="mt-[15vh]">
         <h1 className="text-white w-full text-center sm:text-[20px] text-[30px]">
-          Give me your <span className="text-[var(--primaryColor)]">impression</span>
+          Give me your <span className="gradient-text">impression</span>
         </h1>
       <div className="min-h-[80vh]   text-white flex items-center justify-center">
             <Helmet>
@@ -117,7 +117,7 @@ const Feedback = () => {
                 htmlFor="MyInputFile"
                 className="mb-1 cursor-pointer text-center text-[--primaryColor] bg-white w-full p-3 rounded-md"
               >
-                Choose file
+                <span className="gradient-text">Choose file</span>
               </label>
             <h1 className="text-white  truncate ">
               {imageName}
@@ -129,7 +129,7 @@ const Feedback = () => {
           // data-aos="flip-down"
             disabled = {loading}
             type="submit"
-            className="p-3 rounded-md bg-[--primaryColor]  mx-auto w-[100px] h-fit  "
+            className="p-3 rounded-md gradient-bg  mx-auto w-[100px] h-fit  "
           >
           {loading ?   <svg
               aria-hidden="true"

@@ -51,7 +51,7 @@ function Contact() {
       </Helmet>
       <h1
         data-aos="flip-right"
-        className="text-[50px] font-bold  mb-[20px] text-[var(--primaryColor)] text-center"
+        className="text-[50px] font-bold  mb-[20px] gradient-text text-center"
       >
         Keep in touch
       </h1>
@@ -151,7 +151,7 @@ function Contact() {
             data-aos="flip-down"
             type="submit"
             onClick={handleSubmit(HandleSubmit)}
-            className="  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] sm-md:w-[40%] sm-md:mx-auto sm-md:block w-full lg:w-full text-center bg-[var(--primaryColor)] text-white px-5 py-3 rounded-md mt-[20px] focus-within:outline-none"
+            className="  shadow-[0px_px_0px_5px_#00000024] shadow-orange-500 sm-md:w-[40%] sm-md:mx-auto sm-md:block w-full lg:w-full text-center gradient-bg text-white px-5 py-3 rounded-md mt-[20px] focus-within:outline-none"
           >
             Send
           </button>

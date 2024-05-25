@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 function Footer() {
   return (
     <div className="bg-[#111] h-[100px] flex flex-col justify-center items-center flex-shrink-0 px-[20px]  ">
-      <h1 className="text-[var(--primaryColor)] sm-md:text-[20px] text-[20px] text-center">
+      <h1 className="gradient-text sm-md:text-[20px] text-[20px] text-center">
         <Typewriter
           options={{
             strings: [

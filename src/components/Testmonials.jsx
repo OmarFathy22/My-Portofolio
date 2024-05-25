@@ -51,7 +51,7 @@ function Testmonials() {
   const testimonials = value?.docs?.map((doc) => doc?.data());
   const { pathname } = useLocation();
   return (
-    <div className="my-[100px]">
+    <div className="mt-[100px]">
       <Helmet>
         <meta
           name="Description"
@@ -60,13 +60,15 @@ function Testmonials() {
         <title>{pathname === "/" ? "Home" : "Testmonials"}</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
       </Helmet>
-      <h1
-        data-aos="zoom-out"
-        className="text-[50px] font-bold text-[var(--primaryColor)] text-center mb-[100px]"
-      >
-        {" "}
-        Testimonials{" "}
-      </h1>
+      <div className="flex justify-center">
+        <h1
+          data-aos="zoom-out"
+          className="text-[50px] font-bold gradient-text text-center mb-[100px]"
+        >
+          {" "}
+          Testimonials{" "}
+        </h1>
+      </div>
       <div className="w-[80%] mx-auto  ">
         <Slider {...settings}>
           {testimonials?.map((item, index) => (
@@ -76,7 +78,7 @@ function Testmonials() {
             >
               <h3
                 data-aos="zoom-in"
-                className="bg-white px-[20px] py-[25px] text-[var(--primaryColor)] text-[20px]"
+                className="bg-white px-[20px] py-[25px] text-orange-500 text-[20px]"
               >
                 <FaQuoteRight />
               </h3>
@@ -86,7 +88,7 @@ function Testmonials() {
               <div className="flex flex-col justify-center items-center gap-[5px] ">
                 <div
                   data-aos="fade-down"
-                  className="border-[3px] border-[var(--primaryColor)]  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor] rounded-full p-2 h-[200px] w-[200px] "
+                  className="border-[3px] border-orange-500 shadow-[0px_px_0px_5px_#00000024] shadow-orange-500 rounded-full p-2 h-[200px] w-[200px] "
                 >
                   <img
                     src={
@@ -106,7 +108,7 @@ function Testmonials() {
                   </h1>
                   <h1
                     data-aos="fade-right"
-                    className="text-[var(--primaryColor)] text-[18px] text-center capitalize"
+                    className="gradient-text text-[18px] text-center capitalize"
                   >
                     {item?.title}
                   </h1>
@@ -119,7 +121,7 @@ function Testmonials() {
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <Link
           to={"/Impression"}
-          className="text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4  hover:bg-[var(--primaryColor)] transition-all mt-[50px] text-[15px] min-w-[200px] text-center  shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]"
+          className="text-white border-[1px] border-orange-500 rounded-full p-4  hover:gradient-bg transition-all mt-[50px] text-[15px] min-w-[200px] text-center  shadow-[0px_px_0px_5px_#00000024] shadow-orange-500"
         >
           Give Impression
         </Link>

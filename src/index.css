@@ -57,6 +57,12 @@ p {
 .gradient-bg {
   background-image: linear-gradient(to right, #F4442C, #F69C08);
 }
+.gradient-border {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #F4442C, #F69C08);
+}
+
 body {
   background-color: var(--primaryBackground);
 }
@@ -75,7 +81,7 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-  background-color: var(--primaryColor);
+  background: var(--gradiant-orange, linear-gradient(90deg, #F4442C 0%, #F69C08 100%));
   width: 0;
 }
 

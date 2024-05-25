@@ -70,7 +70,7 @@ function AboutMe() {
         <title>Skills</title>
         <link rel="canonical" href="https://omarfathy.pages.dev" />
     </Helmet>
-      <h1 className="text-[50px]  font-bold mb-7 text-[var(--primaryColor)]">
+      <h1 className="text-[50px]  font-bold mb-7 gradient-text">
         Skills
       </h1>
       <div ref={sectionRef} className="flex justify-center  gap-10 gap-x-[200px] flex-wrap ">
@@ -78,7 +78,7 @@ function AboutMe() {
           return (
             <div
               key={index}
-              className="relative flex shadow-[0px_px_0px_5px_#00000024] shadow-[--primaryColor]  border-[1px] border-[var(--primaryColor)] rounded-full w-full h-10"
+              className="relative flex shadow-[0px_px_0px_5px_#00000024] shadow-orange-500  border-[1px] border-orange-500 rounded-full w-full h-10"
             >
             <div className='absolute w-full flex h-full '>
                 <h4 className="text-white text-center !w-[100%] flex items-center justify-center  !h-full  font-semibold">
@@ -89,7 +89,7 @@ function AboutMe() {
                 style={{ width: item.percentage }}
                 className="h-full rounded-full "
               >
-                <div className={`w-0 h-full rounded-full bg-[var(--primaryColor)] ${hasAnimated ? "skills" : ''} `}></div>
+                <div className={`w-0 h-full rounded-full gradient-bg ${hasAnimated ? "skills" : ''} `}></div>
               </div>
             </div>
           );

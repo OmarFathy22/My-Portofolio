@@ -24,8 +24,8 @@ function Hero() {
           src={"https://res.cloudinary.com/dqhdokahr/image/upload/v1691835175/my-portfolio/remove_bg_yvxr7q.png"}
           alt=""
           className="AnimatedHero w-[500px] h-[500px] sm:w-[300px] sm:h-[300px] pt-2    
-          border-[1px] border-[--primaryColor] rounded-full  object-contain  sticky top-0 right-0 left-0 bottom-0
-          shadow-[0px_-10px_20px_1px_#e2e8f0] shadow-[--primaryColor]  transition-all duration-500 ease-in-out
+          border-[2px] border-orange-500 rounded-full  object-contain  sticky top-0 right-0 left-0 bottom-0
+          shadow-[0px_-10px_20px_1px_#e2e8f0] shadow-orange-500  transition-all duration-500 ease-in-out
           
            "
         />
@@ -35,7 +35,7 @@ function Hero() {
           <h1 className="text-white text-[20px] font-semibold">
             Hello I&apos;M
           </h1>
-          <h1 className="text-[var(--primaryColor)] text-center sm:!text-[25px] sm-md:text-[30px] lg:text-[50px] text-[70px]">
+          <h1 className="gradient-text text-center sm:!text-[25px] sm-md:text-[30px] lg:text-[50px] text-[70px]">
             <Typewriter
               options={{
                 strings: ["OMAR FATHY", "FULL STACK DEVELOPER"],
@@ -55,7 +55,7 @@ function Hero() {
           <a
             href={my_cv}
             download
-            className="shadow-[0_1px_10px_rgba(8,_112,_184,_0.3)] shadow-[--primaryColor] text-white border-[1px] border-[var(--primaryColor)] rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]"
+            className="shadow-[0_1px_10px_rgba(8,_112,_184,_0.3)] shadow-orange-500 text-white border-[1px] border-orange-500 rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]"
           >
             Download CV
           </a>
@@ -64,7 +64,7 @@ function Hero() {
               href={socialLinks[3]}
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--primaryColor)] text-[25px] hover:opacity-[0.9] transition-all"
+              className="gradient-text text-[25px] hover:opacity-[0.9] transition-all"
             >
               <FaGithubSquare />
             </a>
@@ -72,7 +72,7 @@ function Hero() {
               href={socialLinks[1]}
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--primaryColor)] text-[22px] hover:opacity-[0.9] transition-all"
+              className="gradient-text text-[22px] hover:opacity-[0.9] transition-all"
             >
               <BsLinkedin />
             </a>
@@ -81,7 +81,7 @@ function Hero() {
               href={socialLinks[2]}
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--primaryColor)] text-[30px] hover:opacity-[0.9] transition-all"
+              className="gradient-text text-[30px] hover:opacity-[0.9] transition-all"
             >
               <AiFillInstagram />
             </a>
@@ -89,7 +89,7 @@ function Hero() {
               href={socialLinks[0]}
               target="_blank"
               rel="noreferrer"
-              className="text-[var(--primaryColor)] text-[26px] hover:opacity-[0.9] transition-all"
+              className="gradient-text text-[26px] hover:opacity-[0.9] transition-all"
             >
               <FaWhatsappSquare />
             </a>
