@@ -46,7 +46,17 @@ p {
   --black: #000;
   --silver: #bac8d3;
 }
-
+.gradient-text {
+  background-image: linear-gradient(to right, #F4442C, #F69C08);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  font-weight: bold;
+}
+.gradient-bg {
+  background-image: linear-gradient(to right, #F4442C, #F69C08);
+}
 body {
   background-color: var(--primaryBackground);
 }

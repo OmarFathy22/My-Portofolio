@@ -15,7 +15,6 @@ function Header() {
   const [setActive] = useState("/");
   const menuRef = useRef(null);
   const location = useLocation();
-  console.log(location.pathname);
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -49,7 +48,7 @@ function Header() {
             {/* <img src={logo} alt="image" className="w-[200px] h-[100px] " /> */}
             <h1
               onClick={Nav}
-              className="cursor-pointer text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  logoFont   uppercase text-[30px]"
+              className="cursor-pointer text-[--primaryColor] sm:text-[20px] sm:w-[200px]    w-[250px]  font-bold    uppercase text-[30px]"
             >
               Omar Fathy
             </h1>
@@ -71,23 +70,23 @@ function Header() {
               </Link>
             </li>
           ))}
-          <input
+          {/* <input
             type="color"
             value={theme}
             onChange={changeColor}
             className=" cursor-pointer  w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--priamryColor]"
-          />
+          /> */}
         </ul>
         <div
           data-aos="fade-right"
           className="flex justify-end item-center lg:hidden xl:hidden w-[70%] "
         >
-          <input
+          {/* <input
             type="color"
             value={theme}
             onChange={changeColor}
             className="cursor-pointer mt-[7px] sm:mr-1  w-[30px] h-[25px] py-1 px-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-[--primaryColor]"
-          />
+          /> */}
           <button
             ref={menuRef}
             onClick={() => {

@@ -15,7 +15,6 @@ function Contact() {
     reset,
     formState: { errors },
   } = useForm();
-  // const onSubmit = (data) => console.log(data);
   const form = useRef();
   const HandleSubmit = () => {
     // e.preventDefault();
@@ -28,11 +27,9 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           alert("Message sent successfully");
         },
         (error) => {
-          console.log(error.text);
           alert("Message not sent");
         }
       );
