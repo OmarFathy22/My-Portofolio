@@ -39,7 +39,7 @@ function Projects() {
   }, []);
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
-    <div className=" gap-[30px]  flex items-center flex-col  justify-center px-[10%] mt-[100px] no-scrollbar">
+    <div className=" gap-[30px]  flex items-center flex-col  justify-center px-[10%] mt-[100px] sm:mt-[20px] no-scrollbar">
       <Helmet>
         <meta
           name="Description"
@@ -50,14 +50,14 @@ function Projects() {
       </Helmet>
       <h1
         data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
-        className="text-[50px] font-bold mb-7 gradient-text"
+        className="text-[50px] font-bold mb-7 sm:mb-0 gradient-text"
       >
         Projects
       </h1>
       <div
         data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
         style={{ transition: "all 0.3s ease-in" }}
-        className={` px-5 flex sm:gap-[10px] gap-6 py-4 z-1 bg-[var(--primaryBackground)]`}
+        className={` w-full justify-between flex sm:gap-[5px] borderr gap-6 py-4 z-1 bg-[var(--primaryBackground)]`}
       >
         {buttons.map((item, index) => (
           <button
@@ -74,7 +74,7 @@ function Projects() {
               );
             }}
             key={index}
-            className={`text-white border-[1px] sm:text-[10px] font-bold  shadow-[0px_px_0px_5px_#00000024] shadow-orange-500  border-orange-500 rounded-full sm:px-[10px] sm:py-1 px-4 py-2 hover:gradient-bg transition-all  ${
+            className={`text-white border-[1px] sm:text-[10px] font-bold  shadow-[0px_px_0px_5px_#00000024] shadow-orange-500  border-orange-500 rounded-full sm:px-[5px] sm:py-1 px-4 py-2 hover:gradient-bg transition-all  ${
               item === currBtn ? "gradient-bg" : ""
             }`}
           >

@@ -51,7 +51,7 @@ function Testmonials() {
   const testimonials = value?.docs?.map((doc) => doc?.data());
   const { pathname } = useLocation();
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[100px] sm:mt-[20px]">
       <Helmet>
         <meta
           name="Description"

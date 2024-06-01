@@ -129,7 +129,7 @@ const Feedback = () => {
           // data-aos="flip-down"
             disabled = {loading}
             type="submit"
-            className="p-3 rounded-md gradient-bg  mx-auto w-[100px] h-fit  "
+            className="p-3 rounded-md gradient-bgh  mx-auto w-[100px] h-fit  "
           >
           {loading ?   <svg
               aria-hidden="true"
