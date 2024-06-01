@@ -39,7 +39,7 @@ function Projects() {
   }, []);
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
-    <div className=" gap-[30px]  flex items-center flex-col  justify-center px-[10%] mt-[100px] sm:mt-[20px] no-scrollbar">
+    <div className=" gap-[30px]  flex items-center flex-col  justify-center px-[10%] mt-[100px] sm:mt-[50px] no-scrollbar">
       <Helmet>
         <meta
           name="Description"

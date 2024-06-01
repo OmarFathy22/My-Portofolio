@@ -55,7 +55,7 @@ function Hero() {
           <a
             href={my_cv}
             download
-            className="shadow-[0_1px_10px_rgba(8,_112,_184,_0.3)] shadow-orange-500 text-white border-[1px] border-orange-500 rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px]"
+            className="shadow-[0_1px_10px_rgba(8,_112,_184,_0.3)] shadow-orange-500 text-white border-[1px] border-orange-500 rounded-full p-4 px-14 hover:bg-[var(--primaryColor)] transition-all mt-[50px] sm:mt-[10px]"
           >
             Download CV
           </a>

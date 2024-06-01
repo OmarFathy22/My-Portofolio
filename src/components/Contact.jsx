@@ -38,7 +38,7 @@ function Contact() {
 
   return (
     <div
-      className="min-h-[80vh] lg:mx-auto flex flex-1 items-center flex-col  justify-center px-[10%] mt-[100px] sm:mt-[50px]"
+      className="min-h-[80vh] lg:mx-auto flex flex-1 items-center flex-col  justify-center  px-[10%] sm:px-[3%] mt-[100px] sm:mt-[50px]"
       id="#Contact"
     >
       <Helmet>
@@ -60,7 +60,7 @@ function Contact() {
       flex sm-md:flex-col sm-md:justify-center sm-md:items-center gap-[100px] sm-md:gap-[20px]  mx-[20px] 
       "
       >
-        <form className="text-black" ref={form} onSubmit={handleSubmit(HandleSubmit)}>
+        <form className="text-black w-full" ref={form} onSubmit={handleSubmit(HandleSubmit)}>
           <div className="flex sm-md:flex-col sm-md:gap-[20px]  w-full">
             <div data-aos="flip-left" className="flex flex-col flex-1">
               <input
@@ -135,7 +135,7 @@ function Contact() {
               },
             })}
             placeholder="Enter your message here..."
-            className=" sm-md:block sm-md:mx-auto w-full sm-md:w-[100%] mt-[20px] p-3 rounded-md focus-within:outline-none"
+            className=" sm-md:block sm-md:mx-auto  w-full sm-md:w-[100%] mt-[20px] p-3 rounded-md focus-within:outline-none"
             style={{ resize: "none" }}
             cols="98"
             rows="10"
