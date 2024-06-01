@@ -57,7 +57,7 @@ function Projects() {
       <div
         data-aos={Animation[Math.floor(Math.random() * Animation.length)]}
         style={{ transition: "all 0.3s ease-in" }}
-        className={` w-full justify-between flex sm:gap-[5px] borderr gap-6 py-4 z-1 bg-[var(--primaryBackground)]`}
+        className={` w-full  justify-center flex sm:gap-[5px] borderr gap-6 py-4 z-1 bg-[var(--primaryBackground)]`}
       >
         {buttons.map((item, index) => (
           <button
