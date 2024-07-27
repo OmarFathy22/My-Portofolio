@@ -85,6 +85,10 @@ body {
   width: 0;
 }
 
+.downloadBtnHover:hover{
+  background: var(--gradiant-orange, linear-gradient(90deg, #F4442C 0%, #F69C08 100%));
+}
+
 @media screen and (max-width: 768px) {
   ::-webkit-scrollbar {
     width: 0;
