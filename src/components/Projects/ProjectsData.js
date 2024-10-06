@@ -1,6 +1,17 @@
 export const buttons = ["ALL", "REACT NATIVE", "REACT", "MERN STACK"];
 export const ALL = [
   {
+    name: "LearnIt",
+    description:
+      "Interactive platform offering expert-led courses for practical skills and growth",
+    stack: ["Next.js" , "Node.js" , "Tailwind CSS"],
+    SourceCode: "https://github.com/OmarFathy22/Learnit-frontend",
+    LiveDemo: "https://learn-it-ten.vercel.app/",
+    video:
+      "https://firebasestorage.googleapis.com/v0/b/postatiwith.appspot.com/o/Portofolio%20website%20videos%2FMemory%20Card%20Game.mp4?alt=media&token=096da0d0-f6c7-43ac-8cad-834ddff6c5e6",
+    youtubeId: "5hG_Cyit3dM",
+  },
+  {
     name: "EntertainX",
     description:
       "EntertainX is a modern entertainment booking system and an active community platform",
